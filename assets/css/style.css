@@ -1,4 +1,33 @@
+canvas {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .option-btn {
-  width: 160px;
-  height: 30px;
+  width: 158px;
+  height: 66px;
+  padding: 1px;
+  float: left;
+}
+
+.commands {
+  min-height: 504px;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.row {
+  z-index: 1;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
