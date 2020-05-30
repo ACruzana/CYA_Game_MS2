@@ -2,29 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pirate Adventure</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS & Font Awesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/057f5beaf7.js" crossorigin="anonymous"></script>
+
+  <!-- Own CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <title>The long lost Treasure</title>
 </head>
 
 <body>
-  <section>
-    <div>
-      <canvas id="gameCanvas" width="316" height="500" style="border:2px solid #c3c3c3;"></canvas>
+  <section class="row no-gutters game-interface align-items-center mt-4">
+    <!-- Game Title -->
+    <div class="col-12 col-lg-4 d-flex justify-content-center text-center mb-1">
+      <h1>The long lost Treasure</h1>
     </div>
-    <div class="commands">
-      <div class="row">
-        <input id="option1" class="option-btn" type="submit" value="option1" />
-        <input id="option2" class="option-btn" type="submit" value="option2" />
-        <input id="option3" class="option-btn" type="submit" value="option3" />
-        <input id="option4" class="option-btn" type="submit" value="option4" />
+    <!-- Game Enviroment -->
+    <div class="col-12 col-lg-4 d-flex justify-content-center mt-3">
+      <div class="row no-gutters">
+        <!-- Game Canvas -->
+        <div class="col-12 d-flex justify-content-center">
+          <canvas id="gameCanvas" width="316" height="500" style="border:2px solid #c3c3c3;"></canvas>
+        </div>
+        <!-- Game Controls -->
+        <div class="col-12 commands">
+          <div class="row no-gutters">
+            <div class="col-12 d-flex justify-content-center">
+              <input id="option1" class="option-btn" type="submit" value="option1" />
+              <input id="option2" class="option-btn" type="submit" value="option2" />
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <input id="option3" class="option-btn" type="submit" value="option3" />
+              <input id="option4" class="option-btn" type="submit" value="option4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Game Features -->
+    <div class="col-12 col-lg-4 d-flex justify-content-center acordeon-stuff">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Instructions
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              TBD.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Options
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              TBD.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Features
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              TBD.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <footer>
-    <p>License, copyright, etc</p>
+  <footer class="fixed-bottom row d-none d-sm-block no-gutters text-center">
+    <p class="m-0">License, copyright, etc</p>
   </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <!-- Own JS -->
   <script type="text/javascript" src="/assets/js/script.js"></script>
-</body></html>
+</body>
+
+</html>

@@ -1,33 +1,37 @@
-canvas {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
+/* General */
+
+body {
+  background-image: url(/assets/images/fondo.jpg);
 }
+
+section {
+  
+}
+
+footer {
+  background: black;
+  color: white;
+}
+
+/* Game Title */
+
+
+/* Buttons */
 
 .option-btn {
   width: 158px;
   height: 66px;
-  padding: 1px;
   float: left;
 }
 
 .commands {
-  min-height: 504px;
-  width: 320px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: -134px;
 }
 
-.row {
-  z-index: 1;
-  position: absolute;
-  bottom: 2px;
-  left: 2px;
-}
+/* Side Section */
 
-footer {
-  position: fixed;
-  bottom: 0;
+.acordeon-stuff {
+  position: relative;
+  top: -100px;
 }
