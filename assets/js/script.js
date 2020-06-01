@@ -1,53 +1,91 @@
-/* jshint esversion: 6 */
+/*jshint esversion: 6 */ /*jshint jquery: true*/ /*jshint node: true*/ /*jshint browser: true*/
+/*eslint-env es6*/ /*eslint-env jquery*/ /*eslint-env browser*/ /*eslint no-console: 0*/
 
-var main = function () {
-  "use strict";
-  var canvas = document.getElementById('gameCanvas');
-  var ctx = canvas.getContext("2d");
+const screenElem = document.getElementById("screen");
+const commandsElem = document.getElementById("commands");
 
-  ctx.font = "30px Comic Sans MS";
-  ctx.fillStyle = "red";
-  ctx.textAlign = "center";
-  ctx.fillText("Game On", canvas.width / 2, canvas.height / 2);
+let status = {}
 
-  $("#option1").on("click", function () {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    $(canvas).css("border", "2px solid red");
-    var img = document.createElement("img");
-    img.src = "/assets/images/2.png";
-    img.addEventListener("load", function () {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height-132);
-    });
-  });
-  $("#option2").on("click", function () {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    $(canvas).css("border", "2px solid black");
-    var img = document.createElement("img");
-    img.src = "/assets/images/3.png";
-    img.addEventListener("load", function () {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height-132);
-    });
+function game() {
+  status = {}
+  showScene(1)
+}
 
-  });
-  $("#option3").on("click", function () {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    $(canvas).css("border", "2px solid green");
-    var img = document.createElement("img");
-    img.src = "/assets/images/4.png";
-    img.addEventListener("load", function () {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height-132);
-    });
+function showScene(sceneNumber) {
+  const scene = scenes.find(scene => scene.id === sceneNumber)
+  screenElem.innerText = scene.text
+  while (commandsElem.firstChild) {
+    commandsElem.removeChild(commandsElem.firstChild)
+  }
+  
+  scene.options.forEach(option => {
+    if (showOptions(option)) {
+      const btn = document.createElement("button")
+      btn.innerText = option.text
+      $(btn).addClass("option-btn")
+      btn.addEventListener("click", () => chooseOption(option))
+      commandsElem.appendChild(btn)
+    }
+  })
+}
 
-  });
-  $("#option4").on("click", function () {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    $(canvas).css("border", "2px solid blue");
-    var img = document.createElement("img");
-    img.src = "/assets/images/5.png";
-    img.addEventListener("load", function () {
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height-132);
-    });
-  });
-};
+function showOptions(option) {
+  return true
+}
 
-$(document).ready(main);
+function chooseOption(option) {
+  const nextSceneNumber = option.nextScene
+  status = Object.assign(status, option.setStatus)
+  showScene(nextSceneNumber)
+}
+
+const scenes = [
+  {
+    id: 1,
+    text: "id1 on going",
+    options: [
+      {
+        text: "one",
+        setStatus: { continue: true },
+        nextScene: 2
+      },
+      {
+        text: "two",
+        nextScene: 2
+      },
+      {
+        text: "-",
+        nextScene: 1
+      },
+      {
+        text: "-",
+        nextScene: 1
+      }
+    ]
+  },
+  {
+    id: 2,
+    text: "id2 on going",
+    options: [
+      {
+        text: "four",
+        setStatus: { continue: true },
+        nextScene: 1
+      },
+      {
+        text: "five",
+        nextScene: 2
+      },
+      {
+        text: "six",
+        nextScene: 1
+      },
+      {
+        text: "seven",
+        nextScene: 1
+      }
+    ]
+  }
+]
+
+$(document).ready(game());
