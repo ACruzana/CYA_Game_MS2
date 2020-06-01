@@ -18,33 +18,28 @@
 <body>
   <section class="row no-gutters game-interface align-items-center mt-4">
     <!-- Game Title -->
-    <div class="col-12 col-lg-4 d-flex justify-content-center text-center mb-1">
+    <div class="col-12 col-lg-4 text-center mb-1">
       <h1>The long lost Treasure</h1>
     </div>
     <!-- Game Enviroment -->
     <div class="col-12 col-lg-4 d-flex justify-content-center mt-3">
       <div class="row no-gutters">
-        <!-- Game Canvas -->
-        <div class="col-12 d-flex justify-content-center">
-          <canvas id="gameCanvas" width="316" height="500" style="border:2px solid #c3c3c3;"></canvas>
-        </div>
-        <!-- Game Controls -->
-        <div class="col-12 commands">
-          <div class="row no-gutters">
-            <div class="col-12 d-flex justify-content-center">
-              <input id="option1" class="option-btn" type="submit" value="option1" />
-              <input id="option2" class="option-btn" type="submit" value="option2" />
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <input id="option3" class="option-btn" type="submit" value="option3" />
-              <input id="option4" class="option-btn" type="submit" value="option4" />
-            </div>
+        <!-- Game Container -->
+        <div class="col-12 mx-auto game-container">
+          <!-- Game Screen -->
+          <div id="screen" class="game-screen"></div>
+          <!-- Game Controls -->
+          <div id="commands" class="game-commands">
+            <button class="option-btn">option1</button>
+            <button class="option-btn">option2</button>
+            <button class="option-btn">option3</button>
+            <button class="option-btn">option4</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Game Features -->
-    <div class="col-12 col-lg-4 d-flex justify-content-center acordeon-stuff">
+    <div class="col-12 col-lg-4 d-flex justify-content-center mt-3 acordeon-stuff">
       <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -103,6 +98,4 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <!-- Own JS -->
   <script type="text/javascript" src="/assets/js/script.js"></script>
-</body>
-
-</html>
+</body></html>
