@@ -28,6 +28,7 @@ footer {
   background: gray;
   margin: 2px;
   max-width: 314px;
+  min-width: 314px;
   min-height: 363px;
 }
 

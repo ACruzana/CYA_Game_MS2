@@ -1,52 +1,71 @@
-/*jshint esversion: 6 */ /*jshint jquery: true*/ /*jshint node: true*/ /*jshint browser: true*/
-/*eslint-env es6*/
-/*eslint-env jquery*/
-/*eslint-env browser*/
-/*eslint no-console: 0*/
+/* jshint esversion: 6 */ /*jshint jquery: true */ /*jshint node: true */ /* jshint browser: true */ /* eslint-env es6 */ /* eslint-env jquery */ /* eslint-env browser */ /* eslint no-console: 0 */
 
+
+/* Variables Set (screen/commands) */
 const screenElem = document.getElementById("screen");
 const commandsElem = document.getElementById("commands");
 
+/* Main function */
 function game() {
-  showScene(1)
+  showScene(0);
 }
 
+/* Setting scene on interface -Control function- */
 function showScene(sceneNumber) {
-  const scene = scenes.find(scene => scene.id === sceneNumber)
-  screenElem.innerText = scene.text
+  const scene = scenes.find(scene => scene.id === sceneNumber); //Access our object
+  
+  /* Screen */
+  
+  const bgSrc = '"'+scene.background+'"';
+  const bgUrl = 'url('+bgSrc+')';
+  $(screenElem).css({ "background-image": bgUrl }); //Put new scene background
+  screenElem.innerText = scene.text; //Screen access test, change to image eventually
+  
+  /* Commands */
+  
   while (commandsElem.firstChild) {
-    commandsElem.removeChild(commandsElem.firstChild)
-  }
-
+    commandsElem.removeChild(commandsElem.firstChild);
+  } //Remove old option buttons
+  
   scene.options.forEach(option => {
-    const btn = document.createElement("button")
-    btn.innerText = option.text
-    $(btn).addClass("option-btn")
-    btn.addEventListener("click", () => chooseOption(option))
-    commandsElem.appendChild(btn)
-  })
+    const btn = document.createElement("button");
+    btn.innerText = option.text;
+    $(btn).addClass("option-btn");
+    btn.addEventListener("click", () => chooseOption(option));
+    commandsElem.appendChild(btn);
+  }); //Create new option buttons
 }
 
+/* Changing scene -Trigger function- */
 function chooseOption(option) {
-  const nextSceneNumber = option.nextScene
+  const nextSceneNumber = option.nextScene;
   if (nextSceneNumber === 0) {
-    return game()
+    return game(); //Restart option
   } else {
-    showScene(nextSceneNumber)
+    showScene(nextSceneNumber); //Following scene
   }
 }
 
+/* Game API (scenes) */
 const scenes = [
   {
-    id: 1,
+    id: 0, //Home Screen
+    text: "id0 on going",
+    background: "/assets/images/1.png",
+    options: [
+
+    ]
+  },
+  {
+    id: 1, //Scene One - no choice
     text: "id1 on going",
     options: [
       {
-        text: "one",
+        text: "next1",
         nextScene: 2
       },
       {
-        text: "two",
+        text: "next1",
         nextScene: 2
       },
       {
@@ -60,19 +79,19 @@ const scenes = [
     ]
   },
   {
-    id: 2,
+    id: 2, //Scene Two - first choice
     text: "id2 on going",
     options: [
       {
-        text: "four",
-        nextScene: 2
+        text: "back",
+        nextScene: 1
       },
       {
-        text: "five",
-        nextScene: 2
+        text: "back",
+        nextScene: 1
       },
       {
-        text: "six",
+        text: "stay",
         nextScene: 2
       },
       {
@@ -81,6 +100,7 @@ const scenes = [
       }
     ]
   }
-]
+];
 
+/* Call the function to start game */
 $(document).ready(game());
