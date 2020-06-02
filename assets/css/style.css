@@ -1,9 +1,8 @@
 /* General */
 
 body {
-  background-image: url(/assets/images/site-bg.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(/assets/images/site-bg.jpg) repeat top;
+  background-size: 100wv 100hv;
   font-family: 'Pirata One', cursive;
   letter-spacing: 1px;
 }

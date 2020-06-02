@@ -13,20 +13,22 @@ function game() {
 /* Setting scene on interface -Control function- */
 function showScene(sceneNumber) {
   const scene = scenes.find(scene => scene.id === sceneNumber); //Access our object
-  
+
   /* Screen */
-  
-  const bgSrc = '"'+scene.background+'"';
-  const bgUrl = 'url('+bgSrc+')';
-  $(screenElem).css({ "background-image": bgUrl }); //Put new scene background
-  screenElem.innerText = scene.text; //Screen access test, change to image eventually
-  
+
+  const bgSrc = '"' + scene.background + '"';
+  const bgUrl = 'url(' + bgSrc + ')';
+  $(screenElem).css(
+    { "background-image": bgUrl }
+  ); //Put new scene background
+  screenElem.innerText = scene.text; //Screen access test
+
   /* Commands */
-  
+
   while (commandsElem.firstChild) {
     commandsElem.removeChild(commandsElem.firstChild);
   } //Remove old option buttons
-  
+
   scene.options.forEach(option => {
     const btn = document.createElement("button");
     btn.innerText = option.text;
@@ -50,23 +52,38 @@ function chooseOption(option) {
 const scenes = [
   {
     id: 0, //Home Screen
-    text: "id0 on going",
+    text: "Home screen",
     background: "/assets/images/1.png",
     options: [
-
-    ]
+      {
+        text: "Start Adventure!",
+        nextScene: 1
+      },
+      {
+        text: "-",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 0
+      }]
   },
   {
     id: 1, //Scene One - no choice
-    text: "id1 on going",
+    text: "First Scene - Found map",
+    background: "/assets/images/3.png",
     options: [
       {
-        text: "next1",
+        text: "Read Map",
         nextScene: 2
       },
       {
-        text: "next1",
-        nextScene: 2
+        text: "Drop Map",
+        nextScene: 1.1
       },
       {
         text: "-",
@@ -80,19 +97,20 @@ const scenes = [
   },
   {
     id: 2, //Scene Two - first choice
-    text: "id2 on going",
+    text: "Second Scene - First choice",
+    background: "/assets/images/4.png",
     options: [
       {
-        text: "back",
-        nextScene: 1
+        text: "Alist",
+        nextScene: 3
       },
       {
-        text: "back",
-        nextScene: 1
+        text: "Steal",
+        nextScene: 3
       },
       {
-        text: "stay",
-        nextScene: 2
+        text: "Hide",
+        nextScene: 3
       },
       {
         text: "restart",
