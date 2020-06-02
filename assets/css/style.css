@@ -78,7 +78,7 @@ footer {
 }
 
 .acordeon-part {
-  background-image: url(/assets/images/game-container-bg.jpg);
+  background-image: url(/assets/images/game-features-bg.jpg);
   background-size: cover;
   border: none;
 }
@@ -95,7 +95,6 @@ footer {
 
 .acordeon-title:focus {
   color: rgb(255,250,240);
-  text-decoration: underline;
 }
 
 .acordion-info {
