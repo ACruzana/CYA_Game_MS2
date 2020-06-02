@@ -6,20 +6,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap CSS & Font Awesome-->
+  <!-- Bootstrap CSS, Google Fonts & Font Awesome-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/057f5beaf7.js" crossorigin="anonymous"></script>
 
   <!-- Own CSS -->
+  <link rel="stylesheet" href="/assets/fonts/stylesheet.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>The long lost Treasure</title>
 </head>
 
 <body>
-  <section class="row no-gutters game-interface align-items-center mt-4">
+  <section class="row no-gutters align-items-center mt-4 mb-4">
     <!-- Game Title -->
-    <div class="col-12 col-lg-4 text-center mb-1">
-      <h1>The long lost Treasure</h1>
+    <div class="col-12 col-lg-4 text-center">
+      <h1 class="ml-4 mr-4 game-title">The long lost Treasure</h1>
     </div>
     <!-- Game Enviroment -->
     <div class="col-12 col-lg-4 d-flex justify-content-center mt-3">
@@ -27,7 +29,7 @@
         <!-- Game Container -->
         <div class="col-12 game-container">
           <!-- Game Screen -->
-          <div id="screen" class="game-screen">text</div>
+          <div id="screen" class="mx-auto game-screen"></div>
           <!-- Game Controls -->
           <div id="commands" class="game-commands">
             <button class="option-btn">option1</button>
@@ -39,47 +41,47 @@
       </div>
     </div>
     <!-- Game Features -->
-    <div class="col-12 col-lg-4 d-flex justify-content-center mt-3 acordeon-stuff">
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Instructions
+    <div class="col-12 col-lg-4 mt-3">
+      <div class="accordion mx-auto acordeon-section" id="accordion">
+        <div class="card acordeon-part">
+          <div id="headingFirst">
+            <h2 class="m-2">
+              <button class="btn btn-block text-left acordeon-title" type="button" data-toggle="collapse" data-target="#collapseFirst" aria-expanded="true" aria-controls="collapseFirst">
+                Instructions:
               </button>
             </h2>
           </div>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              TBD.
+          <div id="collapseFirst" class="collapse show" aria-labelledby="headingFirst" data-parent="#accordion">
+            <div class="pb-2 mx-auto text-center acordion-info">
+              Choose the path you want to take and try to live the pirate's dream. Rum and Glory!!
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Options
+        <div class="card acordeon-part">
+          <div id="headingSecond">
+            <h2 class="m-2">
+              <button class="btn btn-block text-left collapsed acordeon-title" type="button" data-toggle="collapse" data-target="#collapseSecond" aria-expanded="false" aria-controls="collapseSecond">
+                Options:
               </button>
             </h2>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              TBD.
+          <div id="collapseSecond" class="collapse" aria-labelledby="headingSecond" data-parent="#accordion">
+            <div class="pb-2 mx-auto text-center acordion-info">
+              Sound On/Off. // Music On/Off // Lights Off //
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Features
+        <div class="card acordeon-part">
+          <div id="headingThird">
+            <h2 class="m-2">
+              <button class="btn btn-block text-left collapsed acordeon-title" type="button" data-toggle="collapse" data-target="#collapseThird" aria-expanded="false" aria-controls="collapseThird">
+                Features:
               </button>
             </h2>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              TBD.
+          <div id="collapseThird" class="collapse" aria-labelledby="headingThird" data-parent="#accordion">
+            <div class="pb-2 mx-auto text-center acordion-info">
+              Not Available.
             </div>
           </div>
         </div>
@@ -95,7 +97,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- jQuery -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <!-- Own JS -->
-  <script type="text/javascript" src="/assets/js/script.js"></script>
+  <script src="/assets/js/script.js"></script>
 </body></html>

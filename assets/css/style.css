@@ -1,24 +1,33 @@
 /* General */
 
 body {
-  background-image: url(/assets/images/fondo.jpg);
+  background-image: url(/assets/images/site-bg.jpg);
   background-position: center;
-  background-size: cover
-}
-
-section {
-  color: black;
+  background-size: cover;
+  font-family: 'Pirata One', cursive;
+  letter-spacing: 1px;
 }
 
 footer {
   background: black;
-  color: white;
+  color: rgb(255,250,240);
 }
 
 /* Game Title */
 
+.game-title {
+  color: #B2010E;
+  font-family: 'pirateletters';
+  font-size: 300%;
+  font-weight: 900;
+}
+
+/* Game Screen */
+
 .game-container {
-  background: #BB7318;
+  background-image: url(/assets/images/game-container-bg.jpg);
+  background-position: center;
+  background-size: 316px 500px;
   border-radius: 3px;
   box-shadow: 0 0 10px 2px;
   height: 500px;
@@ -27,32 +36,35 @@ footer {
 }
 
 .game-screen {
-  background: no-repeat center;
-  background-size: 310px 363px;
+  background: no-repeat;
+  background-size: 312px 363px;
   border-radius: 3px;
   min-height: 363px;
-  width: 314px;
+  width: 312px;
 }
 
 .game-commands {
+  margin-top: 2px;
   min-height: 132px;
-  margin-top: 3px;
 }
 
-/* Buttons */
+/* Game Commands */
 
 .option-btn {
-  background-color: #200302;
-  border: 1px solid #BB7318;
-  border-radius: 5px;
-  color: floralwhite;
+  background-color: rgb(32,3,2);
+  background-color: rgba(32,3,2,0.5);
+  border: none;
+  border-radius: 3px;
+  color: rgb(255,250,240);
   float: left;
+  font-size: 140%;
   height: 66px;
   width: 158px;
 }
 
 .option-btn:hover {
-  background-color: #420303;
+  background-color: rgb(32,3,2);
+  background-color: rgba(32,3,2,0.7);
 }
 
 .option-btn:focus {
@@ -61,6 +73,40 @@ footer {
 
 /* Side Section */
 
-.acordeon-stuff {
-  color: black
+.acordeon-section {
+  width: 80%;
+}
+
+.acordeon-part {
+  background-image: url(/assets/images/game-container-bg.jpg);
+  background-size: cover;
+  border: none;
+}
+
+.acordeon-title {
+  color: rgb(255,250,240);
+  font-family: 'pirateletters';
+  font-size: 80%;
+}
+
+.acordeon-title:hover {
+  color: #B2010E;
+}
+
+.acordeon-title:focus {
+  color: rgb(255,250,240);
+  text-decoration: underline;
+}
+
+.acordion-info {
+  color: rgb(255,250,240);
+  width: 80%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 992px) {
+  .game-title {
+    font-size: 450%;
+  }
 }
