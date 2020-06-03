@@ -8,8 +8,9 @@
 const scenes = [
   {
     id: 0, //Home Screen
-    text: "Home screen",
-    background: "/assets/images/1.png",
+    text: "",
+    background: "/assets/images/scenes/0.png",
+    dialog: "",
     options: [
       {
         text: "Start Adventure!",
@@ -30,16 +31,17 @@ const scenes = [
   },
   {
     id: 1, //Scene One - no choice
-    text: "First Scene - Found map",
-    background: "/assets/images/3.png",
+    text: "First Scene - Found map choice",
+    background: "/assets/images/scenes/1.png",
+    dialog: "",
     options: [
       {
         text: "Read Map",
-        nextScene: 2
+        nextScene: 1.1
       },
       {
         text: "Drop Map",
-        nextScene: 1.1
+        nextScene: 1.2
       },
       {
         text: "-",
@@ -52,25 +54,146 @@ const scenes = [
     ]
   },
   {
-    id: 2, //Scene Two - first choice
-    text: "Second Scene - First choice",
-    background: "/assets/images/4.png",
+    id: 1.1, //Scene One - choice
+    text: "Read map - Continue",
+    background: "/assets/images/scenes/1.1.png",
+    dialog: "",
     options: [
       {
-        text: "Alist",
-        nextScene: 3
+        text: "Continue",
+        nextScene: 2
       },
       {
-        text: "Steal",
-        nextScene: 3
+        text: "-",
+        nextScene: 1.1
+      },
+      {
+        text: "-",
+        nextScene: 1.1
+      },
+      {
+        text: "-",
+        nextScene: 1.1
+      }
+    ]
+  },
+  {
+    id: 1.2, //Scene One - no choice
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Drop map - no can do",
+    options: [
+      {
+        text: "Read Map",
+        nextScene: 1.1
+      },
+      {
+        text: "-",
+        nextScene: 1.2
+      },
+      {
+        text: "-",
+        nextScene: 1.2
+      },
+      {
+        text: "-",
+        nextScene: 1.2
+      }
+    ]
+  },
+  {
+    id: 2, //Scene Two - first choice
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Second Scene - First choice",
+    options: [
+      {
+        text: "Enlist",
+        nextScene: 2.1
       },
       {
         text: "Hide",
-        nextScene: 3
+        nextScene: 2.2
       },
       {
-        text: "restart",
-        nextScene: 0
+        text: "Steal",
+        nextScene: 2.3
+      },
+      {
+        text: "-",
+        nextScene: 2
+      }
+    ]
+  },
+  {
+    id: 2.1, //Scene Two - first choice
+    text: "Enlist - Continue",
+    background: "/assets/images/scenes/2.1.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 2
+      },
+      {
+        text: "-",
+        nextScene: 2.1
+      },
+      {
+        text: "-",
+        nextScene: 2.1
+      },
+      {
+        text: "-",
+        nextScene: 2.1
+      }
+    ]
+  },
+  {
+    id: 2.2, //Scene Two - first choice
+    text: "Hide Scene - Continue",
+    background: "/assets/images/scenes/2.2.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 2
+      },
+      {
+        text: "-",
+        nextScene: 2.2
+      },
+      {
+        text: "-",
+        nextScene: 2.2
+      },
+      {
+        text: "-",
+        nextScene: 2.2
+      }
+    ]
+  },
+  {
+    id: 2.3, //Scene Two - first choice
+    text: "Steal Scene - Continue",
+    background: "/assets/images/scenes/2.3.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 2
+      },
+      {
+        text: "-",
+        nextScene: 2.3
+      },
+      {
+        text: "-",
+        nextScene: 2.3
+      },
+      {
+        text: "-",
+        nextScene: 2.3
       }
     ]
   }

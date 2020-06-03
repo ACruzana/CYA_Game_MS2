@@ -14,7 +14,7 @@ footer {
 /* Game Title */
 
 .game-title {
-  color: #B2010E;
+  color: rgb(178,1,14);
   font-family: 'pirateletters';
   font-size: 300%;
   font-weight: 900;
@@ -88,7 +88,7 @@ footer {
 }
 
 .acordeon-title:hover {
-  color: #B2010E;
+  color: rgb(178,1,14);
 }
 
 .acordeon-title:focus {
