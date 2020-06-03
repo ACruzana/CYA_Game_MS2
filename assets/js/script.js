@@ -4,6 +4,8 @@
 /* Variables Set (screen/commands) */
 const screenElem = document.getElementById("screen");
 const commandsElem = document.getElementById("commands");
+const infoText = document.getElementById("infoText");
+const bubbleText = document.getElementById("bubbleText");
 
 /* Main function */
 function game() {
@@ -13,16 +15,18 @@ function game() {
 /* Setting scene on interface -Control function- */
 function showScene(sceneNumber) {
   // eslint-disable-next-line
-  const scene = scenes.find(scene => scene.id === sceneNumber); //Access our object
+  const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object
 
   /* Screen */
 
   const bgSrc = '"' + scene.background + '"';
   const bgUrl = 'url(' + bgSrc + ')';
-  $(screenElem).css(
-    { "background-image": bgUrl }
-  ); //Put new scene background
-  screenElem.innerText = scene.text; //Screen access test
+  $(screenElem).css({
+    "background-image": bgUrl
+  }); //Put new scene background
+
+  infoText.innerText = scene.text; //Screen text info type
+  bubbleText.innerText = scene.dialog; //Screen text dialog type
 
   /* Commands */
 
