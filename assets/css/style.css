@@ -49,7 +49,7 @@ footer {
 /* Game Screen */
 
 .infoText {
-  color: rgb(73, 75, 70);
+  color: rgb(51, 51, 51);
   left: 0;
   position: absolute;
   top: 0;
@@ -57,12 +57,13 @@ footer {
 
 .infoText p {
   background: rgb(248, 248, 165);
+  background: rgba(248, 248, 165, 0.7);
   border-radius: 3px;
   box-shadow: 0 0 10px 2px;
 }
 
 .bubbleText {
-  color: rgb(73, 75, 70);
+  color: rgb(51, 51, 51);
   left: 0;
   position: absolute;
   top: 0;
