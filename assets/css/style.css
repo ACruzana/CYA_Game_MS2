@@ -20,7 +20,7 @@ footer {
   font-weight: 900;
 }
 
-/* Game Screen */
+/* Game Enviroment */
 
 .game-container {
   background-image: url(/assets/images/game-container-bg.jpg);
@@ -44,6 +44,28 @@ footer {
 .game-commands {
   margin-top: 2px;
   min-height: 132px;
+}
+
+/* Game Screen */
+
+.infoText {
+  color: rgb(73, 75, 70);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.infoText p {
+  background: rgb(248, 248, 165);
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.bubbleText {
+  color: rgb(73, 75, 70);
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 /* Game Commands */
