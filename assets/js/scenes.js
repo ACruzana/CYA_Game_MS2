@@ -153,7 +153,7 @@ const scenes = [
     id: 2.11, //Scene Two-Eleven - second choice - enlist
     text: "",
     background: "/assets/images/scenes/66.png",
-    dialog: "Avast ye! We going the wrong direction!!",
+    dialog: "Avast ye! We going the wrong direction!! What should I do??",
     options: [
       {
         text: "Trick the Ship's Helm",
@@ -175,13 +175,13 @@ const scenes = [
   },
   {
     id: 2.111, //Scene Eleven-One - continue trick
-    text: "And the helm is tricked",
+    text: "So a 'small' wooden stick applied in the helm made the route fix to the right direction",
     background: "/assets/images/scenes/2.111.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 7.1 //toDo challenge route
+        nextScene: 9.1
       },
       {
         text: "-",
@@ -199,13 +199,13 @@ const scenes = [
   },
   {
     id: 2.112, //Scene Eleven-Two - continue talk
-    text: "Tried but no friendly",
+    text: "It's impossible to talk directly to the captain, missunderstanding with some crew members engaged you in a challenge...",
     background: "/assets/images/scenes/2.112.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 8.1 //toDo plank and death
+        nextScene: 7.1
       },
       {
         text: "-",
@@ -223,13 +223,13 @@ const scenes = [
   },
   {
     id: 2.113, //Scene Eleven-Three - continue escape
-    text: "escaping...",
+    text: "This small rowboat will serve me well, they won't even notice...",
     background: "/assets/images/scenes/2.113.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 6.1 //toDo rowboat
+        nextScene: 6.1
       },
       {
         text: "-",
@@ -325,7 +325,7 @@ const scenes = [
     options: [
       {
         text: "Continue",
-        nextScene: 6.1 //toDo link with rowboat
+        nextScene: 6.2 //toDo link with rowboat
       },
       {
         text: "-",
@@ -485,4 +485,124 @@ const scenes = [
       }
     ]
   },
+  {
+    id: 6.1, //Scene Six-One - rowboat dialog
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Ahoy! Time to make some decisions!! No 'crow's nest' in this rowboat, which route??", //toDo routes
+    options: [
+      {
+        text: "North",
+        nextScene: 6.11
+      },
+      {
+        text: "South",
+        nextScene: 6.12
+      },
+      {
+        text: "East",
+        nextScene: 6.13
+      },
+      {
+        text: "West",
+        nextScene: 6.13
+      }
+    ]
+  },
+  {
+    id: 7.1, //Scene Seven-One - challenge dialog
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Me' don't know how... A death challenge with the captain, oh lord!!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 77 //toDo challenge mode
+      },
+      {
+        text: "-",
+        nextScene: 7.1
+      },
+      {
+        text: "-",
+        nextScene: 7.1
+      },
+      {
+        text: "-",
+        nextScene: 7.1
+      }
+    ]
+  },
+  {
+    id: 9.1, //Scene Nine-One - death intro
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Oh noes 'heartie' they discovered me!! They 'gonna' make me walk the plank!!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.11
+      },
+      {
+        text: "-",
+        nextScene: 9.1
+      },
+      {
+        text: "-",
+        nextScene: 9.1
+      },
+      {
+        text: "-",
+        nextScene: 9.1
+      }
+    ]
+  },
+  {
+    id: 9.11, //Scene Nine-Eleven - walk plank death
+    text: "Meeting with 'Davy Jones Locker', the crew seem excited tho...",
+    background: "/assets/images/scenes/9.11.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.11
+      },
+      {
+        text: "-",
+        nextScene: 9.11
+      },
+      {
+        text: "-",
+        nextScene: 9.11
+      }
+    ]
+  },
+  {
+    id: 99, //Scene NinetyNine - death and restart
+    text: "",
+    background: "/assets/images/scenes/99.png",
+    dialog: "",
+    options: [
+      {
+        text: "Restart",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 99
+      }
+    ]
+  }
 ];
