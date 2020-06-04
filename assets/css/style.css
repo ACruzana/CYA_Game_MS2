@@ -64,6 +64,7 @@ footer {
 
 .bubbleText {
   color: rgb(51, 51, 51);
+  font-size: 110%;
   left: 0;
   position: absolute;
   top: 0;
