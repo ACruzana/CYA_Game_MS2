@@ -205,7 +205,7 @@ const scenes = [
     options: [
       {
         text: "Continue",
-        nextScene: 7.1
+        nextScene: 7
       },
       {
         text: "-",
@@ -295,13 +295,13 @@ const scenes = [
   },
   {
     id: 2.211, //Scene TwentyOne-One - continue challenge
-    text: "here the challenge",
+    text: "What is even going on on deck?? Better get ready...",
     background: "/assets/images/scenes/2.211.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 7.2 //toDo challenge route
+        nextScene: 7
       },
       {
         text: "-",
@@ -319,13 +319,13 @@ const scenes = [
   },
   {
     id: 2.213, //Scene TwentyOne-Three - continue jump
-    text: "scaping...",
+    text: "Run for the edge and blidnly jump over it, not so many choices anyway",
     background: "/assets/images/scenes/2.213.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 6.2 //toDo link with rowboat
+        nextScene: 2.2131
       },
       {
         text: "-",
@@ -338,6 +338,30 @@ const scenes = [
       {
         text: "-",
         nextScene: 2.213
+      }
+    ]
+  },
+  {
+    id: 2.2131, //Scene TwentyOne-ThirtyOne - continue jump link rowboat
+    text: "Oportunity appears just before the eyes, grab a knife and jump on that rowboat",
+    background: "/assets/images/scenes/2.2131.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 6.1 
+      },
+      {
+        text: "-",
+        nextScene: 2.2131
+      },
+      {
+        text: "-",
+        nextScene: 2.2131
+      },
+      {
+        text: "-",
+        nextScene: 2.2131
       }
     ]
   },
@@ -391,13 +415,13 @@ const scenes = [
   },
   {
     id: 2.311, //Scene ThirtyOne-One - continue west
-    text: "",
+    text: "The wind just turned agains the ship, the flags would do better be even raised and the hat about to fly away...",
     background: "/assets/images/scenes/2.311.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 5.1 //toDo chase
+        nextScene: 9.5
       },
       {
         text: "-",
@@ -415,7 +439,7 @@ const scenes = [
   },
   {
     id: 2.312, //Scene ThirtyOne-Two - continue east
-    text: "",
+    text: "Wind blows furious behind the ship, goddess Calypso seems on board!!",
     background: "/assets/images/scenes/2.312.png",
     dialog: "",
     options: [
@@ -439,13 +463,13 @@ const scenes = [
   },
   {
     id: 2.313, //Scene ThirtyOne-Three - continue maintain
-    text: "",
+    text: "Distance is just being maintained, a shift in the route is needed",
     background: "/assets/images/scenes/2.313.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 5.3 //toDo chase
+        nextScene: 2.3131
       },
       {
         text: "-",
@@ -462,14 +486,38 @@ const scenes = [
     ]
   },
   {
-    id: 2.314, //Scene ThirtyOne-Four - continue fight
+    id: 2.3131, //Scene ThirtyOne-ThirtyOne - continue maintain
     text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Aye'!! Tuning point, all or nothing!!!",
+    options: [
+      {
+        text: "East",
+        nextScene: 2.312
+      },
+      {
+        text: "West",
+        nextScene: 2.311
+      },
+      {
+        text: "-",
+        nextScene: 2.3131
+      },
+      {
+        text: "-",
+        nextScene: 2.3131
+      }
+    ]
+  },
+  {
+    id: 2.314, //Scene ThirtyOne-Four - continue fight
+    text: "There we are, you have nothing to lose, you call for their captain!!",
     background: "/assets/images/scenes/2.314.png",
     dialog: "",
     options: [
       {
         text: "Continue",
-        nextScene: 7.3 //toDo challenge route
+        nextScene: 7
       },
       {
         text: "-",
@@ -489,7 +537,7 @@ const scenes = [
     id: 6.1, //Scene Six-One - rowboat dialog
     text: "",
     background: "/assets/images/scenes/66.png",
-    dialog: "Ahoy! Time to make some decisions!! No 'crow's nest' in this rowboat, which route??", //toDo routes
+    dialog: "Ahoy! Time to make some decisions!! No 'crow's nest' in this rowboat, which route??",
     options: [
       {
         text: "North",
@@ -500,36 +548,180 @@ const scenes = [
         nextScene: 6.12
       },
       {
-        text: "East",
+        text: "West",
         nextScene: 6.13
       },
       {
+        text: "East",
+        nextScene: 6.14
+      }
+    ]
+  },
+  {
+    id: 6.11, //Scene Six-One - rowboat 1-north
+    text: "Sailed a while 'N', what to do next?",
+    background: "/assets/images/scenes/6.11.png",
+    dialog: "",
+    options: [
+      {
         text: "West",
+        nextScene: 9.4
+      },
+      {
+        text: "East",
+        nextScene: 9.2
+      },
+      {
+        text: "Back South",
+        nextScene: 6.1
+      },
+      {
+        text: "-",
+        nextScene: 6.11
+      }
+    ]
+  },
+  {
+    id: 6.12, //Scene Six-One - rowboat 1-south
+    text: "Enough with South direction, where now?",
+    background: "/assets/images/scenes/6.11.png",
+    dialog: "",
+    options: [
+      {
+        text: "West",
+        nextScene: 9.3
+      },
+      {
+        text: "East",
+        nextScene: 9.2
+      },
+      {
+        text: "Back North",
+        nextScene: 6.1
+      },
+      {
+        text: "-",
+        nextScene: 6.12
+      }
+    ]
+  },
+  {
+    id: 6.13, //Scene Six-One - rowboat 1-west
+    text: "Enough with going West, where we head now?",
+    background: "/assets/images/scenes/6.11.png",
+    dialog: "",
+    options: [
+      {
+        text: "North",
+        nextScene: 6.131
+      },
+      {
+        text: "South",
+        nextScene: 9.3
+      },
+      {
+        text: "Back East",
+        nextScene: 6.1
+      },
+      {
+        text: "-",
         nextScene: 6.13
       }
     ]
   },
   {
-    id: 7.1, //Scene Seven-One - challenge dialog
+    id: 6.131, //Scene Six-One - rowboat 1-west-north
+    text: "Spent some time heading North, where to row now?",
+    background: "/assets/images/scenes/6.13.png",
+    dialog: "",
+    options: [
+      {
+        text: "West",
+        nextScene: 6.131 //toDo rowboat WIN (island)
+      },
+      {
+        text: "East",
+        nextScene: 9.2
+      },
+      {
+        text: "-",
+        nextScene: 6.131
+      },
+      {
+        text: "-",
+        nextScene: 6.131
+      }
+    ]
+  },
+  {
+    id: 6.14, //Scene Six-One - rowboat 1-east
+    text: "Went a while East direction, where now?",
+    background: "/assets/images/scenes/6.11.png",
+    dialog: "",
+    options: [
+      {
+        text: "North",
+        nextScene: 6.141
+      },
+      {
+        text: "South",
+        nextScene: 9.2
+      },
+      {
+        text: "Back West",
+        nextScene: 6.1
+      },
+      {
+        text: "-",
+        nextScene: 6.14
+      }
+    ]
+  },
+  {
+    id: 6.141, //Scene Six-One - rowboat 1-east-north
+    text: "Spent some time heading North, where to row now?",
+    background: "/assets/images/scenes/6.13.png",
+    dialog: "",
+    options: [
+      {
+        text: "East",
+        nextScene: 9.2
+      },
+      {
+        text: "West",
+        nextScene: 9.4
+      },
+      {
+        text: "-",
+        nextScene: 6.141
+      },
+      {
+        text: "-",
+        nextScene: 6.141
+      }
+    ]
+  },
+  {
+    id: 7, //Scene Seven-One - challenge dialog
     text: "",
     background: "/assets/images/scenes/66.png",
-    dialog: "'Me' don't know how... A death challenge with the captain, oh lord!!",
+    dialog: "'Me' don't know how... A death challenge with the captain about to start, oh lord!!",
     options: [
       {
         text: "Continue",
-        nextScene: 77 //toDo challenge mode
+        nextScene: 77 //toDo challenge mode function
       },
       {
         text: "-",
-        nextScene: 7.1
+        nextScene: 7
       },
       {
         text: "-",
-        nextScene: 7.1
+        nextScene: 7
       },
       {
         text: "-",
-        nextScene: 7.1
+        nextScene: 7
       }
     ]
   },
@@ -702,10 +894,10 @@ const scenes = [
     ]
   },
   {
-    id: 9.41, //Scene Nine-Eleven - whirlpool death
-    text: "",
+    id: 9.41, //Scene Nine-FourtyOne - whirlpool death
+    text: "Drowning like an authentic 'landlubber'...",
     background: "/assets/images/scenes/9.41.png",
-    dialog: "Drowning like an authentic 'landlubber'...",
+    dialog: "",
     options: [
       {
         text: "Continue",
@@ -722,6 +914,54 @@ const scenes = [
       {
         text: "-",
         nextScene: 9.41
+      }
+    ]
+  },
+  {
+    id: 9.5, //Scene Nine-Five - death intro cannons
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Blimey'!! They are right beside me, I guess dead men tell no tales...",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.51
+      },
+      {
+        text: "-",
+        nextScene: 9.5
+      },
+      {
+        text: "-",
+        nextScene: 9.5
+      },
+      {
+        text: "-",
+        nextScene: 9.5
+      }
+    ]
+  },
+  {
+    id: 9.51, //Scene Nine-FiftyOne - cannons death
+    text: "Cannon balls, fireballs, chainballs, unpleasant rain...",
+    background: "/assets/images/scenes/9.51.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.51
+      },
+      {
+        text: "-",
+        nextScene: 9.51
+      },
+      {
+        text: "-",
+        nextScene: 9.51
       }
     ]
   },
