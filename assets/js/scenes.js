@@ -445,7 +445,7 @@ const scenes = [
     options: [
       {
         text: "Continue",
-        nextScene: 5.2 //toDo chase
+        nextScene: 2.9
       },
       {
         text: "-",
@@ -530,6 +530,318 @@ const scenes = [
       {
         text: "-",
         nextScene: 2.314
+      }
+    ]
+  },
+  {
+    id: 2.8, //Scene Two-Eight - fighting win dialog
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Sink me 'heartie', I won!! I'm the captain now! Straight route to the island!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 2.9
+      },
+      {
+        text: "-",
+        nextScene: 2.8
+      },
+      {
+        text: "-",
+        nextScene: 2.8
+      },
+      {
+        text: "-",
+        nextScene: 2.8
+      }
+    ]
+  },
+  {
+    id: 2.9, //Scene Two-Nine - navigating win dialog
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Avast'!!! This should be the island of the map, I'll approach in the rowboat",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 3
+      },
+      {
+        text: "-",
+        nextScene: 2.9
+      },
+      {
+        text: "-",
+        nextScene: 2.9
+      },
+      {
+        text: "-",
+        nextScene: 2.9
+      }
+    ]
+  },
+  {
+    id: 3, //Scene Three - island choices
+    text: "The small island looks a bit bigger once you step on it, let's see what happens...",
+    background: "/assets/images/scenes/3.png",
+    dialog: "",
+    options: [
+      {
+        text: "Explore Beach East",
+        nextScene: 9.6
+      },
+      {
+        text: "Explore Beach West",
+        nextScene: 3.1
+      },
+      {
+        text: "Climb Rocks to Top",
+        nextScene: 3.2
+      },
+      {
+        text: "Go Through Jungle",
+        nextScene: 9.7
+      }
+    ]
+  },
+  {
+    id: 3.1, //Scene Three-One - continue west
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Almost everything looks the same on this side, despite some old stairs I found",
+    options: [
+      {
+        text: "Go Back",
+        nextScene: 3
+      },
+      {
+        text: "Continue Exploring West",
+        nextScene: 9.6
+      },
+      {
+        text: "Go Through Jungle",
+        nextScene: 9.7
+      },
+      {
+        text: "Use Stone Stairs",
+        nextScene: 3.2
+      }
+    ]
+  },
+  {
+    id: 3.2, //Scene Three-Two - continue climb
+    text: "The climb was not that easy but you find yourself near the top now. Is this it finally?",
+    background: "/assets/images/scenes/3.2.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 3.3
+      },
+      {
+        text: "-",
+        nextScene: 3.2
+      },
+      {
+        text: "-",
+        nextScene: 3.2
+      },
+      {
+        text: "-",
+        nextScene: 3.2
+      }
+    ]
+  },
+  {
+    id: 3.3, //Scene Three-Three - continue top
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Ahoy' lad! Showel-time!!",
+    options: [
+      {
+        text: "Dig Under Thin Palm",
+        nextScene: 4
+      },
+      {
+        text: "Dig Near Rock Piles",
+        nextScene: 9.81
+      },
+      {
+        text: "Dig On Red Mark",
+        nextScene: 9.91
+      },
+      {
+        text: "Dig Under the Bonepile",
+        nextScene: 3.31
+      }
+    ]
+  },
+  {
+    id: 3.31, //Scene Three-ThirtyOne - continue bonepile
+    text: "There's nothing under, what's the meaning of this bonepil do here then...",
+    background: "/assets/images/scenes/3.31.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 3.3
+      },
+      {
+        text: "-",
+        nextScene: 3.31
+      },
+      {
+        text: "-",
+        nextScene: 3.31
+      },
+      {
+        text: "-",
+        nextScene: 3.31
+      }
+    ]
+  },
+  {
+    id: 4, //Scene Four - continue dig palm
+    text: "Shiny, heavy, yellow, desired GOLD!!!!",
+    background: "/assets/images/scenes/4.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 5
+      },
+      {
+        text: "-",
+        nextScene: 4
+      },
+      {
+        text: "-",
+        nextScene: 4
+      },
+      {
+        text: "-",
+        nextScene: 4
+      }
+    ]
+  },
+  {
+    id: 5, //Scene Five - continue WIN
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "How we celebrating 'Seadog'??",
+    options: [
+      {
+        text: "Gold Hogger",
+        nextScene: 5.1
+      },
+      {
+        text: "Master of the Seas",
+        nextScene: 5.2
+      },
+      {
+        text: "Speed Devil",
+        nextScene: 5.3
+      },
+      {
+        text: "Rum & Glory",
+        nextScene: 5.4
+      }
+    ]
+  },
+  {
+    id: 5.1, //Scene Five-One - celebration island
+    text: "You don't need to share your treasure, you are a pirate and is all yours, nothing to worry about...",
+    background: "/assets/images/scenes/5.1.png",
+    dialog: "",
+    options: [
+      {
+        text: "Restart",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 5.1
+      },
+      {
+        text: "-",
+        nextScene: 5.1
+      },
+      {
+        text: "-",
+        nextScene: 5.1
+      }
+    ]
+  },
+  {
+    id: 5.2, //Scene Five-Two - celebration master
+    text: "Treasure can get you stupid future tech if enough, you are poor again but not a soul will catch you",
+    background: "/assets/images/scenes/5.2.png",
+    dialog: "",
+    options: [
+      {
+        text: "Restart",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 5.2
+      },
+      {
+        text: "-",
+        nextScene: 5.2
+      },
+      {
+        text: "-",
+        nextScene: 5.2
+      }
+    ]
+  },
+  {
+    id: 5.3, //Scene Five-Three - celebration speed
+    text: "Sails are overrated and you allways liked red, checkmate. The complement came also in red!!",
+    background: "/assets/images/scenes/5.3.png",
+    dialog: "",
+    options: [
+      {
+        text: "Restart",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 5.3
+      },
+      {
+        text: "-",
+        nextScene: 5.3
+      },
+      {
+        text: "-",
+        nextScene: 5.3
+      }
+    ]
+  },
+  {
+    id: 5.4, //Scene Five-Four - celebration rum
+    text: "You can't even be here, but as soon as you said 'Splice the Mainbrace!!' you became the hero. You can already see the bottom of the gold coffer, and night is young",
+    background: "/assets/images/scenes/5.4.png",
+    dialog: "",
+    options: [
+      {
+        text: "Restart",
+        nextScene: 0
+      },
+      {
+        text: "-",
+        nextScene: 5.4
+      },
+      {
+        text: "-",
+        nextScene: 5.4
+      },
+      {
+        text: "-",
+        nextScene: 5.4
       }
     ]
   },
@@ -637,7 +949,7 @@ const scenes = [
     options: [
       {
         text: "West",
-        nextScene: 6.131 //toDo rowboat WIN (island)
+        nextScene: 2.9
       },
       {
         text: "East",
@@ -962,6 +1274,150 @@ const scenes = [
       {
         text: "-",
         nextScene: 9.51
+      }
+    ]
+  },
+  {
+    id: 9.6, //Scene Nine-Six - death intro snakes
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Son of a Biscuit Eater'!! As I turned around the rock they are everywhere!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.61
+      },
+      {
+        text: "-",
+        nextScene: 9.6
+      },
+      {
+        text: "-",
+        nextScene: 9.6
+      },
+      {
+        text: "-",
+        nextScene: 9.6
+      }
+    ]
+  },
+  {
+    id: 9.61, //Scene Nine-SixtyOne - snakes death
+    text: "They slither, they climb, they are legion, sssssssss-rroun-dead...",
+    background: "/assets/images/scenes/9.61.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.61
+      },
+      {
+        text: "-",
+        nextScene: 9.61
+      },
+      {
+        text: "-",
+        nextScene: 9.61
+      }
+    ]
+  },
+  {
+    id: 9.7, //Scene Nine-Seven - death intro trap
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Blimey'!!!! I stepped a bit funny. Am I flying?!?!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.71
+      },
+      {
+        text: "-",
+        nextScene: 9.7
+      },
+      {
+        text: "-",
+        nextScene: 9.7
+      },
+      {
+        text: "-",
+        nextScene: 9.7
+      }
+    ]
+  },
+  {
+    id: 9.71, //Scene Nine-SixtyOne - trap death
+    text: "Landing on sharp spikes not as soft as the take off was. Killer step...",
+    background: "/assets/images/scenes/9.71.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.71
+      },
+      {
+        text: "-",
+        nextScene: 9.71
+      },
+      {
+        text: "-",
+        nextScene: 9.71
+      }
+    ]
+  },
+  {
+    id: 9.81, //Scene Nine-EightyOne - fall death
+    text: "Showel gets trapped under a rock, you lose balance and piles were to close to cliff, such a combination...",
+    background: "/assets/images/scenes/9.81.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.81
+      },
+      {
+        text: "-",
+        nextScene: 9.81
+      },
+      {
+        text: "-",
+        nextScene: 9.81
+      }
+    ]
+  },
+  {
+    id: 9.91, //Scene Nine-EightyOne - fall exposion
+    text: "You hear a 'clank' as the showel enters the dirt. Next thing, you are flying, those bones beside have an easy explanation now...",
+    background: "/assets/images/scenes/9.91.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.91
+      },
+      {
+        text: "-",
+        nextScene: 9.91
+      },
+      {
+        text: "-",
+        nextScene: 9.91
       }
     ]
   },
