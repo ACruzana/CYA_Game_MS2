@@ -534,7 +534,7 @@ const scenes = [
     ]
   },
   {
-    id: 9.1, //Scene Nine-One - death intro
+    id: 9.1, //Scene Nine-One - death intro plank
     text: "",
     background: "/assets/images/scenes/66.png",
     dialog: "Oh noes 'heartie' they discovered me!! They 'gonna' make me walk the plank!!",
@@ -559,7 +559,7 @@ const scenes = [
   },
   {
     id: 9.11, //Scene Nine-Eleven - walk plank death
-    text: "Meeting with 'Davy Jones Locker', the crew seem excited tho...",
+    text: "Sadly meeting with 'Davy Jones', the crew seem excited tho...",
     background: "/assets/images/scenes/9.11.png",
     dialog: "",
     options: [
@@ -578,6 +578,150 @@ const scenes = [
       {
         text: "-",
         nextScene: 9.11
+      }
+    ]
+  },
+  {
+    id: 9.2, //Scene Nine-Two - death intro old crew
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "Oh noes that's the old crew!! They may have forget??",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.21
+      },
+      {
+        text: "-",
+        nextScene: 9.2
+      },
+      {
+        text: "-",
+        nextScene: 9.2
+      },
+      {
+        text: "-",
+        nextScene: 9.2
+      }
+    ]
+  },
+  {
+    id: 9.21, //Scene Nine-Twelve - old crew death
+    text: "Old crew is gathering on the edge guns blazing, this doesn't seem a 'welcome back bucko'...",
+    background: "/assets/images/scenes/9.21.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.11
+      },
+      {
+        text: "-",
+        nextScene: 9.11
+      },
+      {
+        text: "-",
+        nextScene: 9.11
+      }
+    ]
+  },
+  {
+    id: 9.3, //Scene Nine-Three - death intro kraken
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Avast ye'!! Something is emerging from the deep waters!!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.31
+      },
+      {
+        text: "-",
+        nextScene: 9.3
+      },
+      {
+        text: "-",
+        nextScene: 9.3
+      },
+      {
+        text: "-",
+        nextScene: 9.3
+      }
+    ]
+  },
+  {
+    id: 9.31, //Scene Nine-ThirtyOne - kraken death
+    text: "A cute 'lil' octopus... Aye lad, this is the end",
+    background: "/assets/images/scenes/9.31.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.31
+      },
+      {
+        text: "-",
+        nextScene: 9.31
+      },
+      {
+        text: "-",
+        nextScene: 9.31
+      }
+    ]
+  },
+  {
+    id: 9.4, //Scene Nine-Four - death intro whirlpool
+    text: "",
+    background: "/assets/images/scenes/66.png",
+    dialog: "'Blow me down'! Lost control of the rowboat on this waters!!",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 9.41
+      },
+      {
+        text: "-",
+        nextScene: 9.4
+      },
+      {
+        text: "-",
+        nextScene: 9.4
+      },
+      {
+        text: "-",
+        nextScene: 9.4
+      }
+    ]
+  },
+  {
+    id: 9.41, //Scene Nine-Eleven - whirlpool death
+    text: "",
+    background: "/assets/images/scenes/9.41.png",
+    dialog: "Drowning like an authentic 'landlubber'...",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 9.41
+      },
+      {
+        text: "-",
+        nextScene: 9.41
+      },
+      {
+        text: "-",
+        nextScene: 9.41
       }
     ]
   },
