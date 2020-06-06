@@ -5,6 +5,7 @@ const ambientMusic = document.getElementById("ambient-music");
 
 function soundOn () {
   buttonSound.muted = false;
+  buttonSound.volume = 0.8;
 }
 
 function soundOff () {
@@ -13,6 +14,7 @@ function soundOff () {
 
 function musicOn () {
   ambientMusic.play();
+  ambientMusic.volume = 0.8;
 }
 
 function musicOff () {
