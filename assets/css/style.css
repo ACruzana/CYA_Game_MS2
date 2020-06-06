@@ -93,7 +93,7 @@ footer {
   outline: none;
 }
 
-/* Side Section */
+/* Features Section */
 
 .acordeon-section {
   width: 80%;
@@ -122,6 +122,14 @@ footer {
 .acordion-info {
   color: rgb(255,250,240);
   width: 80%;
+}
+
+.feat-option a {
+  cursor: pointer;
+}
+
+.feat-option a:hover {
+  color: rgb(178,1,14);
 }
 
 /* Media Queries */

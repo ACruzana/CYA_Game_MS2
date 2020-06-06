@@ -43,7 +43,13 @@
         </div>
       </div>
     </div>
-    <!-- Game Features -->
+    <!-- Game Features Section -->
+    <!-- Music -->
+    <div>
+      <audio id="button-sound" src="assets/sounds/page-turn.mp3" paused></audio>
+      <audio id="ambient-music" src="assets/sounds/the-buccaneers-haul.mp3" paused></audio>
+    </div>
+    <!-- Feats -->
     <div class="col-12 col-lg-4 mt-3">
       <div class="accordion mx-auto acordeon-section" id="accordion">
         <div class="card acordeon-part">
@@ -56,7 +62,7 @@
           </div>
           <div id="collapseFirst" class="collapse show" aria-labelledby="headingFirst" data-parent="#accordion">
             <div class="pb-2 mx-auto text-center acordion-info">
-              Choose the path you want to take and try to live the pirate's dream. Rum and Glory!!
+              <p>Choose between the options to take the path you want and try to be succesfull and live the pirate's dream. Rum and Glory!!</p>
             </div>
           </div>
         </div>
@@ -70,21 +76,9 @@
           </div>
           <div id="collapseSecond" class="collapse" aria-labelledby="headingSecond" data-parent="#accordion">
             <div class="pb-2 mx-auto text-center acordion-info">
-              Sound On/Off. // Music On/Off // Lights Off //
-            </div>
-          </div>
-        </div>
-        <div class="card acordeon-part">
-          <div id="headingThird">
-            <h2 class="m-2">
-              <button class="btn btn-block text-left collapsed acordeon-title" type="button" data-toggle="collapse" data-target="#collapseThird" aria-expanded="false" aria-controls="collapseThird">
-                Features:
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThird" class="collapse" aria-labelledby="headingThird" data-parent="#accordion">
-            <div class="pb-2 mx-auto text-center acordion-info">
-              Not Available.
+              <div class="mb-1 feat-option">Button Sound <a class="pl-2" id="SoundOn">On</a> / <a id="SoundOff">Off</a></div>
+              <div class="mb-1 feat-option">Ambient Music <a class="pl-2" id="MusicOn">On</a> / <a id="MusicOff">Off</a></div>
+              <div class="mb-3 feat-option">Light Mode <a class="pl-2" id="LightsOn">On</a> / <a id="LightsOff">Off</a></div>
             </div>
           </div>
         </div>
@@ -100,6 +94,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- Own JS -->
+  <script src="/assets/js/features.js"></script>
   <script src="/assets/js/scenes.js"></script>
   <script src="/assets/js/script.js"></script>
 </body></html>
