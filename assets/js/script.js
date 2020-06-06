@@ -15,7 +15,7 @@ function game() {
 /* Setting scene on interface -Control function- */
 function showScene(sceneNumber) {
   const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object at scenes.js
-
+  
   /* Screen */
 
   const bgSrc = "'" + scene.background + "'";
@@ -37,7 +37,12 @@ function showScene(sceneNumber) {
     const btn = document.createElement("button");
     btn.innerText = option.text;
     $(btn).addClass("option-btn");
-    btn.addEventListener("click", () => chooseOption(option));
+    btn.addEventListener("click", () => {
+      chooseOption(option);
+      if (option.text.length > 2) {
+        buttonSound.play();
+      }
+    });
     commandsElem.appendChild(btn);
   }); //Create new option buttons
 }
