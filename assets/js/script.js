@@ -14,13 +14,12 @@ function game() {
 
 /* Setting scene on interface -Control function- */
 function showScene(sceneNumber) {
-  // eslint-disable-next-line
-  const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object
+  const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object at scenes.js
 
   /* Screen */
 
-  const bgSrc = '"' + scene.background + '"';
-  const bgUrl = 'url(' + bgSrc + ')';
+  const bgSrc = "'" + scene.background + "'";
+  const bgUrl = "url(" + bgSrc + ")";
   $(screenElem).css({
     "background-image": bgUrl
   }); //Put new scene background

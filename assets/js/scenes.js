@@ -4,7 +4,6 @@
 
 /* Game API (scenes) */
 
-// eslint-disable-next-line
 const scenes = [
   {
     id: 0, //Home Screen
@@ -349,7 +348,7 @@ const scenes = [
     options: [
       {
         text: "Continue",
-        nextScene: 6.1 
+        nextScene: 6.1
       },
       {
         text: "-",
@@ -679,7 +678,7 @@ const scenes = [
   },
   {
     id: 3.31, //Scene Three-ThirtyOne - continue bonepile
-    text: "There's nothing under, what's the meaning of this bonepil do here then...",
+    text: "There's nothing under, what's the meaning of this bonepile do here then...",
     background: "/assets/images/scenes/3.31.png",
     dialog: "",
     options: [
@@ -1303,7 +1302,7 @@ const scenes = [
   },
   {
     id: 9.61, //Scene Nine-SixtyOne - snakes death
-    text: "They slither, they climb, they are legion, sssssssss-rroun-dead...",
+    text: "They slither, they climb, they are legion, sssssssss-urroun-dead...",
     background: "/assets/images/scenes/9.61.png",
     dialog: "",
     options: [
