@@ -50,7 +50,7 @@
       <audio id="ambient-music" src="assets/sounds/the-buccaneers-haul.mp3" paused></audio>
     </div>
     <!-- Feats -->
-    <div class="col-12 col-lg-4 mt-3">
+    <div class="col-12 col-lg-4 mt-3 mb-3">
       <div class="accordion mx-auto acordeon-section" id="accordion">
         <div class="card acordeon-part">
           <div id="headingFirst">
@@ -76,9 +76,9 @@
           </div>
           <div id="collapseSecond" class="collapse" aria-labelledby="headingSecond" data-parent="#accordion">
             <div class="pb-2 mx-auto text-center acordion-info">
-              <div class="mb-1 feat-option">Button Sound <a class="pl-2" id="SoundOn">On</a> / <a id="SoundOff">Off</a></div>
-              <div class="mb-1 feat-option">Ambient Music <a class="pl-2" id="MusicOn">On</a> / <a id="MusicOff">Off</a></div>
-              <div class="mb-3 feat-option">Light Mode <a class="pl-2" id="LightsOn">On</a> / <a id="LightsOff">Off</a></div>
+              <div class="mb-1 feat-option">Button Sound <a class="pl-2" onclick="soundOn()">On</a> / <a onclick="soundOff()">Off</a></div>
+              <div class="mb-1 feat-option">Ambient Music <a class="pl-2" onclick="musicOn()">On</a> / <a onclick="musicOff()">Off</a></div>
+              <div class="mb-3 feat-option">Light Mode <a class="pl-2" onclick="lightOn()">On</a> / <a onclick="darkOn()">Off</a></div>
             </div>
           </div>
         </div>
