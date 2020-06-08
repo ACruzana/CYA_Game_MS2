@@ -1,7 +1,7 @@
 /* General */
 
 body {
-  background: url(/assets/images/site-bg.jpg) repeat top;
+  background: url(assets/images/site-bg.jpg) repeat top;
   font-family: 'Pirata One', cursive;
   letter-spacing: 1px;
 }
@@ -25,7 +25,7 @@ footer {
 /* Game Enviroment */
 
 .game-container {
-  background-image: url(/assets/images/game-container-bg.jpg);
+  background-image: url(assets/images/game-container-bg.jpg);
   background-position: center;
   background-size: 316px 500px;
   border-radius: 3px;
@@ -102,7 +102,7 @@ footer {
 }
 
 .acordeon-part {
-  background-image: url(/assets/images/game-features-bg.jpg);
+  background-image: url(assets/images/game-features-bg.jpg);
   background-size: cover;
   border: none;
   box-shadow: 0 0 10px 2px;
