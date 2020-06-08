@@ -21,9 +21,9 @@ function musicOff () {
 }
 
 function lightOn () {
-  $("body").css("background", "url(/assets/images/site-bg.jpg) repeat top");
+  $("body").css('background', 'url("assets/images/site-bg.jpg") repeat top');
 }
 
 function darkOn () {
-  $("body").css("background", "url(/assets/images/site-bg-dark.jpg) repeat top");
+  $("body").css('background', 'url("assets/images/site-bg-dark.jpg") repeat top');
 }
