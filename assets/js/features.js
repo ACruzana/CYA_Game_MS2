@@ -13,7 +13,7 @@ function soundOff () {
 
 function musicOn () {
   ambientMusic.play();
-  ambientMusic.volume = 0.5;
+  ambientMusic.volume = 0.2;
 }
 
 function musicOff () {
