@@ -81,9 +81,30 @@
           </div>
           <div id="collapseSecond" class="collapse" aria-labelledby="headingSecond" data-parent="#accordion">
             <div class="pb-2 mx-auto text-center acordion-info">
-              <div class="mb-1 feat-option">Button Sound <a class="pl-2" onclick="soundOn()">On</a> / <a onclick="soundOff()">Off</a></div>
-              <div class="mb-1 feat-option">Ambient Music <a class="pl-2" onclick="musicOn()">On</a> / <a onclick="musicOff()">Off</a></div>
-              <div class="mb-3 feat-option">Light Mode <a class="pl-2" onclick="lightOn()">On</a> / <a onclick="darkOn()">Off</a></div>
+              <div class="mb-1 feat-option">Button Sound
+                <a class="pl-2" onclick="soundOn()">
+                  <span id="soundOn" class="underlined">On</span>
+                </a> /
+                <a onclick="soundOff()">
+                  <span id="soundOff">Off</span>
+                </a>
+              </div>
+              <div class="mb-1 feat-option">Ambient Music
+                <a class="pl-2" onclick="musicOn()">
+                  <span id="musicOn">On</span>
+                </a> /
+                <a onclick="musicOff()">
+                  <span id="musicOff" class="underlined">Off</span>
+                </a>
+              </div>
+              <div class="mb-3 feat-option">Light Mode
+                <a class="pl-2" onclick="lightOn()">
+                  <span id="lightOn" class="underlined">On</span>
+                </a> /
+                <a onclick="darkOn()">
+                  <span id="darkOn">Off</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

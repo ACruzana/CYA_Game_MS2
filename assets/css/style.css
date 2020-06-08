@@ -135,6 +135,10 @@ footer {
   color: rgb(178,1,14);
 }
 
+.underlined {
+  text-decoration: underline;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 992px) {
