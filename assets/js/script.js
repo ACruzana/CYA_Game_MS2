@@ -39,9 +39,9 @@ function showScene(sceneNumber) {
     btn.innerText = option.text;
     $(btn).addClass("option-btn");
     btn.addEventListener("click", () => {
-      chooseOption(option);
+      chooseOption(option); //Select option and process it
       if (option.text.length > 2) {
-        buttonSound.play();
+        buttonSound.play(); //Button effect sound
       }
     });
     commandsElem.appendChild(btn);
