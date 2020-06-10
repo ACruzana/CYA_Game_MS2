@@ -1,19 +1,24 @@
-/* Battle scene logic */
+/* Battle Scene Logic File */
+
+const swordHitSound = document.getElementById("sword-hit-sound"); //Sound Effects
+const swordMissSound = document.getElementById("sword-miss-sound");
+const gunHitSound = document.getElementById("gun-hit-sound");
+const gunMissSound = document.getElementById("gun-miss-sound");
+
+
+/* Battle Option Execution */
+
+function battleOption(option) {
+  console.log("battleOption on going");
+  const actionTaken = option.action;
+  console.log(actionTaken);
+}
+
+/* Main Battle Function */
 
 function battle(sceneNumber) {
   console.log("battle on going");
   const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object at scenes.js
-  
-  /* --- Screen --- */
-
-  const bgSrc = "'" + scene.background + "'";
-  const bgUrl = "url(" + bgSrc + ")";
-  $(screenElem).css({
-    "background-image": bgUrl
-  }); //Put new scene background
-
-  infoText.innerText = scene.text; //Screen text info type
-  bubbleText.innerText = scene.dialog; //Screen text dialog type
 
   /* --- Commands --- */
 
@@ -26,14 +31,21 @@ function battle(sceneNumber) {
     btn.innerText = option.text;
     $(btn).addClass("option-btn");
     btn.addEventListener("click", () => {
-      chooseOption(option);
-      buttonSound.play();
+      battleOption(option); //Choose batlle option and process it
     });
     commandsElem.appendChild(btn);
   }); //Create new option buttons
+      
+  /* --- Screen --- */
+
+  $(screenElem).css({
+    "background": "red"
+  }); // toDo visually
+
+  infoText.innerText = scene.text; //Screen text info type toDo
+  bubbleText.innerText = scene.dialog; //Screen text dialog type toDo
+
   
-  
-  
-  /* win showScene(78);*/
+  /* win showScene(78);*/ //future returns
   /* lose showScene(79);*/
 }
