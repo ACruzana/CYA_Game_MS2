@@ -7,7 +7,7 @@ Pirate Game
 
 **(MS interactive-front-end project - Code Institute by Ángel González)**
 
-This is a "chose your own adventure" type of game. The game is both available to be played in browser of portable device. The site itself includes some optional access features like light/dark mode, sound effects and ambient music to personalise user experience.
+This is a "choose your own adventure" type of game. The game is both available to be played in browser of portable device. The site itself includes some optional access features like light/dark mode, sound effects and ambient music to personalise user experience.
 
 ## UX
 ### User stories
@@ -119,36 +119,46 @@ Finally, the music used for ambience is [The Buccaneers Haul by Shane Ivers](htt
 ## Features
 This site consists single page so let's focus on the different elements:
 
-* **Site Icon**: personalized WebApp icon displays on browser. Also in the case someone bookmarks the game page.
+* **Site Icon**: personalized WebApp icon displays on the browser. Also in the case someone bookmarks the game page.
 
 ![site-icon](/assets/images/site-icon.png "Site icon")
 
 * Game **Title**: strongly styled as the [theming](#Theming) section explained. Display position adapts depending on screen size.
 
-* **Game Screen**: display position adapts depending on screen size keeping allways the main focus spot. Here is the preview of how some of the different [types of scenes](#Scene-Types) result, with changeable text on the interaction buttons and images on the background. As well as the text included on each different scene.
+* **Game Screen**: display position adapts depending on screen size, keeping always the main focus spot. Here is the preview of how some of the different [types of scenes](#Wireframes) result, with changeable text on the interactive buttons and images on the background. As well as the text included in each different scene.
+
 ![Scene-type-description](/assets/images/screencaptures/Scene-type-description.png "Scene type description") ![Scene-type-speech](/assets/images/screencaptures/Scene-type-speech.png "Scene type speech")
- - *Image*: background changes on every visited scene making the story interesting and engaging, and the interaction meaningfull.
 
- - *Text*: changes along the image displayed being either a dialog or a description of the action. Both either prompting the player to take a decision or inform of the new circumstances.
+*Image*: background changes on every visited scene making the story interesting and engaging, and the interaction meaningful.
 
- - *Buttons*: the four buttons display the different options to take and they change acording to the scene. Not being available all of them some times makes the user read and stop a second to engage deeper in the experience.
+*Text*: changes along the image displayed are either a dialog or a description of the action. Both either prompting the player to take a decision or inform of the new circumstances.
 
-* **Miscelanea section**: placed to the right of the game screen, this card-panel system displays the game instructions by default to help the browser user understand the dynamic of the game.
+*Buttons*: the four buttons display the different options to take and they change according to the scene. Not being available all of them sometimes makes the user read and stop a second to engage deeper in the experience.
+
+* **Miscelanea section**: placed to the right of the game screen, this card-panel system displays the game instructions by default to help the browser user understand the dynamic of the game. Once clicked the "Options" card-panel displays and "Instructions" hides. On this panel the user finds sound and music management, as well as having the option to change the theme to a darker one. The active option is marked by an underline.
+
 ![Features-default](/assets/images/screencaptures/Features-default.png "Features default")
-Once clicked the "Options" card-panel displays and "Instructions" hides. On this panel the user find sound and music management, as well as having the option to change the theme to a darker one. The active option is marked by underline.
 ![Features-options](/assets/images/screencaptures/Features-options.png "Features options")
 
- - *Sound Effect*: "ON" by default, allows to mute the sound effect when changing scene.
+*Sound Effect*: "ON" by default, allows to mute the sound effect when changing scene.
 
- - *Ambient Music*: "OFF" by default, allows to play pirate themed music as background meanwhile the user is on the site.
+*Ambient Music*: "OFF" by default, allows to play pirate themed music as background meanwhile the user is on the site.
 
- - *Light Mode*: "ON" by default, allows to change the site background to a darker version to reduce light from screen.
+*Light Mode*: "ON" by default, allows to change the site background to a darker version to reduce the light coming from the screen.
 
-* **Hover Effects**: there is a slight shading in the game screen buttons on browser in case the user scroll over them meanwhile deciding. There is also a hover effect over the "Miscelanea section" titles and "Options" text changing colour. This effect along the mouse transforming to pointer makes it clearer to the user that some action is available, appart from the aestetics, of course. 
+* **Hover Effects**: there is a slight shading in the game screen buttons on browser in case the user scroll over them meanwhile decides. There is also a hover effect over the "Miscelanea section" titles and "Options" text changing colour. This effect along the mouse transforming to pointer makes it clearer to the user that some action is available, apart from the aesthetic, of course. 
 
-* **Inside the Game**: tbd. 
+* **Inside the Game**: a bit of explanation of what is in the actual game.
 
-The whole site has response from small device to large screen, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
+ - Base Dynamic: the premise of the game is choosing an option in a situation and progress to another.
+
+ - Deaths: there are nine different deaths to finish different story arcs. After each of them, the user gets prompted to "Restart" by including it as the only option in the interactive buttons.
+
+ - Wins: after finishing successfully the correct arc, the user gets to chose fours different endings. After the chosen ending is viewed, the player gets prompted to play again to see another ending by including "Play Again" as the only option in the interactive buttons.
+
+ - Battle mode: special mode with slightly different mechanics.
+ 
+The whole site has response from small devices to larger screens, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
 
 ## Contact
 
