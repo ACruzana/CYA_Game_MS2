@@ -18,6 +18,7 @@ function soundOff () {
 function musicOn () {
   ambientMusic.play();
   ambientMusic.volume = 0.2;
+  ambientMusic.loop = true;
   $("#musicOn").addClass("underlined");
   $("#musicOff").removeClass("underlined");
 }
