@@ -1017,7 +1017,7 @@ const scenes = [
     options: [
       {
         text: "Continue",
-        nextScene: 77 //toDo challenge mode function
+        nextScene: 77
       },
       {
         text: "-",
@@ -1030,6 +1030,78 @@ const scenes = [
       {
         text: "-",
         nextScene: 7
+      }
+    ]
+  },
+  {
+    id: 77, //Scene Seven-Seven - challenge mode
+    text: "",
+    background: "",
+    dialog: "",
+    options: [
+      {
+        text: "Sword",
+        nextScene: 77
+      },
+      {
+        text: "Flintlock",
+        nextScene: 77
+      },
+      {
+        text: "Parry",
+        nextScene: 77
+      },
+      {
+        text: "Evade",
+        nextScene: 77
+      }
+    ]
+  },
+  {
+    id: 78, //Scene Seven-Eight - challenge win
+    text: "",
+    background: "won.png", //toDo
+    dialog: "u won battle", //toDo
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 78
+      },
+      {
+        text: "-",
+        nextScene: 78
+      },
+      {
+        text: "-",
+        nextScene: 78
+      }
+    ]
+  },
+  {
+    id: 79, //Scene Seven-Nine - challenge lose
+    text: "",
+    background: "lost.png", //toDo
+    dialog: "u lost battle", //toDo
+    options: [
+      {
+        text: "Continue",
+        nextScene: 99
+      },
+      {
+        text: "-",
+        nextScene: 79
+      },
+      {
+        text: "-",
+        nextScene: 79
+      },
+      {
+        text: "-",
+        nextScene: 79
       }
     ]
   },
