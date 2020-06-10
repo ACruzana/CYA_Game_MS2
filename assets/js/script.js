@@ -1,22 +1,23 @@
-/* jshint esversion: 6 */ /*jshint jquery: true */ /*jshint node: true */ /* jshint browser: true */ /* eslint-env es6 */ /* eslint-env jquery */ /* eslint-env browser */ /* eslint no-console: 0 */
-
 
 /* Variables Set (screen/commands) */
+
 const screenElem = document.getElementById("screen");
 const commandsElem = document.getElementById("commands");
 const infoText = document.getElementById("infoText");
 const bubbleText = document.getElementById("bubbleText");
 
 /* Main function */
+
 function game() {
   showScene(0);
 }
 
 /* Setting scene on interface -Control function- */
+
 function showScene(sceneNumber) {
   const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object at scenes.js
   
-  /* Screen */
+  /* --- Screen --- */
 
   const bgSrc = "'" + scene.background + "'";
   const bgUrl = "url(" + bgSrc + ")";
@@ -27,7 +28,7 @@ function showScene(sceneNumber) {
   infoText.innerText = scene.text; //Screen text info type
   bubbleText.innerText = scene.dialog; //Screen text dialog type
 
-  /* Commands */
+  /* --- Commands --- */
 
   while (commandsElem.firstChild) {
     commandsElem.removeChild(commandsElem.firstChild);
@@ -48,14 +49,18 @@ function showScene(sceneNumber) {
 }
 
 /* Changing scene -Trigger function- */
+
 function chooseOption(option) {
   const nextSceneNumber = option.nextScene;
   if (nextSceneNumber === 0) {
     return game(); //Restart option
+  } else if (nextSceneNumber === 77) {
+    return battle(); //Battle option
   } else {
     showScene(nextSceneNumber); //Following scene
   }
 }
 
-/* Call the function to start game */
+/* Call the main function to start game as the site is loaded */
+
 $(document).ready(game());
