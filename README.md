@@ -47,7 +47,7 @@ Here are the first concept wireframes:
 ![Scene-type-speech](/assets/wireframes/Scene-type-speech.png "Scene type speech") 
 ![Scene-type-combat](/assets/wireframes/Scene-type-combat.png "Scene type combat")
 
-Final concept wirerames:
+Final concept wireframes:
 
 * Browser View: 
 
@@ -110,11 +110,45 @@ As mentioned, theming was an important matter for the project in order to make t
 
 The special and more elaborated font for the title is [Jack Pirate](https://www.fontspace.com/jack-pirate-font-f42234) by [Måns Grebäck](https://www.fontspace.com/m%C3%A5ns-greb%C3%A4ck). The font for the rest of the site is "Pirata One".
 
-All the pictures and desings were made on [Canva](https://www.canva.com/).
+All the pictures and designs were made in [Canva](https://www.canva.com/).
 
 Color palette sticks to tones that are commonly associated with the pirate world.
 
 Finally, the music used for ambience is [The Buccaneers Haul by Shane Ivers](https://www.silvermansound.com), meanwhile the button effect was found at [Sound Snap](https://www.soundsnap.com/).
+
+## Features
+This site consists single page so let's focus on the different elements:
+
+* **Site Icon**: personalized WebApp icon displays on browser. Also in the case someone bookmarks the game page.
+
+![site-icon](/assets/images/site-icon.png "Site icon")
+
+* Game **Title**: strongly styled as the [theming](#Theming) section explained. Display position adapts depending on screen size.
+
+* **Game Screen**: display position adapts depending on screen size keeping allways the main focus spot. Here is the preview of how some of the different [types of scenes](#Scene-Types) result, with changeable text on the interaction buttons and images on the background. As well as the text included on each different scene.
+![Scene-type-description](/assets/images/screencaptures/Scene-type-description.png "Scene type description") ![Scene-type-speech](/assets/images/screencaptures/Scene-type-speech.png "Scene type speech")
+ - *Image*: background changes on every visited scene making the story interesting and engaging, and the interaction meaningfull.
+
+ - *Text*: changes along the image displayed being either a dialog or a description of the action. Both either prompting the player to take a decision or inform of the new circumstances.
+
+ - *Buttons*: the four buttons display the different options to take and they change acording to the scene. Not being available all of them some times makes the user read and stop a second to engage deeper in the experience.
+
+* **Miscelanea section**: placed to the right of the game screen, this card-panel system displays the game instructions by default to help the browser user understand the dynamic of the game.
+![Features-default](/assets/images/screencaptures/Features-default.png "Features default")
+Once clicked the "Options" card-panel displays and "Instructions" hides. On this panel the user find sound and music management, as well as having the option to change the theme to a darker one. The active option is marked by underline.
+![Features-options](/assets/images/screencaptures/Features-options.png "Features options")
+
+ - *Sound Effect*: "ON" by default, allows to mute the sound effect when changing scene.
+
+ - *Ambient Music*: "OFF" by default, allows to play pirate themed music as background meanwhile the user is on the site.
+
+ - *Light Mode*: "ON" by default, allows to change the site background to a darker version to reduce light from screen.
+
+* **Hover Effects**: there is a slight shading in the game screen buttons on browser in case the user scroll over them meanwhile deciding. There is also a hover effect over the "Miscelanea section" titles and "Options" text changing colour. This effect along the mouse transforming to pointer makes it clearer to the user that some action is available, appart from the aestetics, of course. 
+
+* **Inside the Game**: tbd. 
+
+The whole site has response from small device to large screen, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
 
 ## Contact
 
