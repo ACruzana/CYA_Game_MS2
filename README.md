@@ -158,6 +158,7 @@ This site consists single page so let's focus on the different elements:
 
  *Battle mode*: special mode with slightly different mechanics. Player is trapped in this scene until success or defeat. Turn based battle to the best to five, which is the number of lives provided for both player and opponent.
 
+-----
 The whole site has response from small devices to larger screens, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
 
 ### Future Features Objectives
@@ -170,6 +171,38 @@ Ordering the possibilities in a list of viability, considering both complexity a
 3. Save game feature allowing the player to save the current situation on the story and coming back another day or in another terminal. This is provided the points 1 and 2 are implemented. A login system. (HIG complexity / MED relevance)
 
 4. Provide proper sizing and response for 4k screens (MED complexity / LOW relevance)
+
+## Deployment
+This site is temporarily hosted on GitHub Pages, from Master branch.
+
+Deployment on Pages was made only before submitting the project for final testing. The project was kept on Brackets "live preview" for modifications, even though it was committed to GitHub and updated via GitBash on a frequent basis.
+
+To run it on your local computer offline, the repository must be cloned beforehand.
+
+## Credits
+
+All the ideas, materials displayed and all the site designs belong to Ángel González. Only exception is the "ambient music" [see Theming](#theming).
+
+### Images
+[*Canva.com*](https://www.canva.com/)
+
+### Music
+[*The Buccaneers Haul by Shane Ivers*](https://www.silvermansound.com)
+
+----
+**Disclaimer:** This site and its contents or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher except for the use of brief quotations as credits and/or recommendation. Copyright © 2020.
+
+### Acknowledgements
+Great help once more from the documentation of these two sites, you can really learn as you go and adapt their examples to your own code:
+
+* [w3schools](https://www.w3schools.com/)
+* [MDN](https://developer.mozilla.org/en-US/)
+
+Special mention to this page for providing pirate themed slang:
+
+* [Pirate Voyages](https://www.piratevoyages.com/pirate-lingo/)
+
+Also a shout out to my mentor on this project [Maranatha A. Ilesanmi](") for providing guidance when needed.
 
 ## Contact
 
