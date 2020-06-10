@@ -530,30 +530,6 @@ const scenes = [
     ]
   },
   {
-    id: 2.8, //Scene Two-Eight - fighting win dialog
-    text: "",
-    background: "assets/images/scenes/66.png",
-    dialog: "Sink me 'heartie', I won!! I'm the captain now! Straight route to the island!",
-    options: [
-      {
-        text: "Continue",
-        nextScene: 2.9
-      },
-      {
-        text: "-",
-        nextScene: 2.8
-      },
-      {
-        text: "-",
-        nextScene: 2.8
-      },
-      {
-        text: "-",
-        nextScene: 2.8
-      }
-    ]
-  },
-  {
     id: 2.9, //Scene Two-Nine - navigating win dialog
     text: "",
     background: "assets/images/scenes/66.png",
@@ -1060,12 +1036,12 @@ const scenes = [
   {
     id: 78, //Scene Seven-Eight - challenge win
     text: "",
-    background: "won.png", //toDo
-    dialog: "u won battle", //toDo
+    background: "assets/images/scenes/66.png",
+    dialog: "Yo Ho Ho!! I'm the captain now! 'Weigh anchor and hoist the mizzen'!",
     options: [
       {
         text: "Continue",
-        nextScene: 99
+        nextScene: 78.1
       },
       {
         text: "-",
@@ -1082,10 +1058,34 @@ const scenes = [
     ]
   },
   {
+    id: 78.1, //Scene Seven-Eight-One - challenge win continue
+    text: "Being the captain was easier than expected and weird enough, they have fear...",
+    background: "assets/images/scenes/78.1.png",
+    dialog: "",
+    options: [
+      {
+        text: "Continue",
+        nextScene: 2.9
+      },
+      {
+        text: "-",
+        nextScene: 78.1
+      },
+      {
+        text: "-",
+        nextScene: 78.1
+      },
+      {
+        text: "-",
+        nextScene: 78.1
+      }
+    ]
+  },
+  {
     id: 79, //Scene Seven-Nine - challenge lose
     text: "",
-    background: "lost.png", //toDo
-    dialog: "u lost battle", //toDo
+    background: "assets/images/scenes/66.png",
+    dialog: "Aaaarrrrgggghhhh! 'Me' feel a 'cutlass' through my chest",
     options: [
       {
         text: "Continue",
