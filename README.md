@@ -30,6 +30,55 @@ Is another of the goals that the player plays again after failing, so an option 
 
 The most ambitious goal is having a player playing again after winning the game, to attempt to achieve this four different endings were defined.
 
+### Wireframes
+Here are the first concept wireframes:
+
+* Browser View: 
+
+![Browser-View](/assets/wireframes/Browser-idea.png "Browser View")
+
+* Device View: 
+
+![Device-View](/assets/wireframes/Phone-idea.png "Device View")
+
+* Scene Types: 
+
+![Scene-type-description](/assets/wireframes/Scene-type-description.png "Scene type description") 
+![Scene-type-speech](/assets/wireframes/Scene-type-speech.png "Scene type speech") 
+![Scene-type-combat](/assets/wireframes/Scene-type-combat.png "Scene type combat")
+
+Final concept wirerames:
+
+* Browser View: 
+
+![Browser-View](/assets/wireframes/Browser-idea-defined.png "Browser View")
+
+* Device View: 
+
+![Device-View](/assets/wireframes/Phone-idea-defined.png "Device View")
+
+* Scene Types: 
+
+See [Features](#Features)
+
+Another very important part of the planning process was the structure of the story, this was in order to make easier establish code logic. Here are the decision trees of the game (last two are not included to avoid spoilers):
+
+* Start decision tree: 
+
+![Start-Tree](/assets/wireframes/Tree-decision-start.png "Start Tree")
+
+* Hide decision tree: 
+
+![Hide-Tree](/assets/wireframes/Tree-decision-hide.png "Hide Tree")
+
+* Enlist decision tree: 
+
+![Enlist-Tree](/assets/wireframes/Tree-decision-enlist.png "Enlist Tree")
+
+* Rob decision tree: 
+
+![Rob-Tree](/assets/wireframes/Tree-decision-rob.png "Rob Tree")
+
 ### Scope
 Considering the goals set at [Strategy](#Strategy), has been necessary to make a solid pirate theme [(see Theming)](#Theming) to make the experience coherent. As well as giving some options to customize and make the user spend more time in the WebApp.
 
@@ -56,57 +105,16 @@ The **game** section, displays centered and occupying most of the screen focusin
 
 The **features** section, displays under the main screen, given that this view is more intuitive and no space wants to be taken from the game section.
 
-### Wireframes
-Here are the first concept wireframes:
+### Theming
+As mentioned, theming was an important matter for the project in order to make the experience unique.
 
-* Browser View: 
+The special and more elaborated font for the title is [Jack Pirate](https://www.fontspace.com/jack-pirate-font-f42234) by [Måns Grebäck](https://www.fontspace.com/m%C3%A5ns-greb%C3%A4ck). The font for the rest of the site is "Pirata One".
 
-![Browser-View](/assets/wireframes/Browser-idea.png "Browser View")
+All the pictures and desings were made on [Canva](https://www.canva.com/).
 
-* Device View: 
+Color palette sticks to tones that are commonly associated with the pirate world.
 
-![Device-View](/assets/wireframes/Phone-idea.png "Device View")
-
-* Scene Types: 
-
-![Scene-type-description](/assets/wireframes/Scene-type-description.png "Scene type description") 
-![Scene-type-speech](/assets/wireframes/Scene-type-speech.png "Scene type speech") 
-![Scene-type-combat](/assets/wireframes/Scene-type-combat.png "Scene type combat")
-
-
-Final concept wirerames:
-
-* Browser View: 
-
-![Browser-View](/assets/wireframes/Browser-idea-defined.png "Browser View")
-
-* Device View: 
-
-![Device-View](/assets/wireframes/Phone-idea-defined.png "Device View")
-
-* Scene Types: 
-
-See [Features](#Features)
-
-Another very important part of the planning process was the structure of the story, this was in order to make easier establish code logic. Here are the decision trees of the game (last two are not included to avoid spoilers):
-
-* Start tree: 
-
-![Start-Tree](/assets/wireframes/Tree-decision-start.png "Start Tree")
-
-* Hide tree: 
-
-![Hide-Tree](/assets/wireframes/Tree-decision-hide.png "Hide Tree")
-
-* Enlist tree: 
-
-![Enlist-Tree](/assets/wireframes/Tree-decision-enlist.png "Enlist Tree")
-
-* Rob tree: 
-
-![Rob-Tree](/assets/wireframes/Tree-decision-rob.png "Rob Tree")
-
-
+Finally, the music used for ambience is [The Buccaneers Haul by Shane Ivers](https://www.silvermansound.com), meanwhile the button effect was found at [Sound Snap](https://www.soundsnap.com/).
 
 ## Contact
 
