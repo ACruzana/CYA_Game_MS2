@@ -4,7 +4,7 @@ const swordHitSound = document.getElementById("sword-hit-sound"); //Sound Effect
 const swordMissSound = document.getElementById("sword-miss-sound");
 const gunHitSound = document.getElementById("gun-hit-sound");
 const gunMissSound = document.getElementById("gun-miss-sound");
-
+const battleText = document.getElementById("battleText"); //Text imputs
 
 /* Battle Option Execution */
 
@@ -42,9 +42,7 @@ function battle(sceneNumber) {
     "background": "red"
   }); // toDo visually
 
-  infoText.innerText = scene.text; //Screen text info type toDo
-  bubbleText.innerText = scene.dialog; //Screen text dialog type toDo
-
+  battleText.innerText = scene.text; //Screen text info type toDo
   
   /* win showScene(78);*/ //future returns
   /* lose showScene(79);*/

@@ -72,6 +72,19 @@ footer {
   top: 0;
 }
 
+.battleText {
+  color: rgb(51, 51, 51);
+  position: relative;
+  top: 150px;
+}
+
+.battleText p {
+  background: rgb(248, 248, 165);
+  background: rgba(248, 248, 165, 0.7);
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px;
+}
+
 /* Game Commands */
 
 .option-btn {
