@@ -752,7 +752,7 @@ const scenes = [
     dialog: "",
     options: [
       {
-        text: "Restart",
+        text: "Play Again",
         nextScene: 0
       },
       {
@@ -776,7 +776,7 @@ const scenes = [
     dialog: "",
     options: [
       {
-        text: "Restart",
+        text: "Play Again",
         nextScene: 0
       },
       {
@@ -800,7 +800,7 @@ const scenes = [
     dialog: "",
     options: [
       {
-        text: "Restart",
+        text: "Play Again",
         nextScene: 0
       },
       {
@@ -824,7 +824,7 @@ const scenes = [
     dialog: "",
     options: [
       {
-        text: "Restart",
+        text: "Play Again",
         nextScene: 0
       },
       {
