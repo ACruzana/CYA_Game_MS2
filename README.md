@@ -172,6 +172,19 @@ Ordering the possibilities in a list of viability, considering both complexity a
 
 4. Provide proper sizing and response for 4k screens (MED complexity / LOW relevance)
 
+## Testing
+During the development, using Brackets by Adobe and its built-in live preview made it very easy to adjust response and test the majority as was coded, via Developer Tools.
+
+After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" checking for possible warnings or errors.
+
+**Global Display:** tbd.
+
+**Game Screen:** tbd.
+
+**Game Commands:** tbd.
+
+**Options:** tbd. 
+
 ## Deployment
 This site is temporarily hosted on GitHub Pages, from Master branch.
 
