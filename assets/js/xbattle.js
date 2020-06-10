@@ -1,10 +1,19 @@
 /* Battle Scene Logic File */
 
 const swordHitSound = document.getElementById("sword-hit-sound"); //Sound Effects
-const swordMissSound = document.getElementById("sword-miss-sound");
-const gunHitSound = document.getElementById("gun-hit-sound");
-const gunMissSound = document.getElementById("gun-miss-sound");
+const swordParrySound = document.getElementById("sword-parry-sound");
+const gunSound = document.getElementById("gun-sound");
 const battleText = document.getElementById("battleText"); //Text imputs
+
+/* Battle Option Execution */
+
+function actionResult(action) { //How boss reacts toDo
+  if (action === "swordAttack") {
+      console.log("you attacked with the sword")
+      } else {
+        console.log("you did not attack with the sword")
+      }
+}
 
 /* Battle Option Execution */
 
@@ -12,6 +21,7 @@ function battleOption(option) {
   console.log("battleOption on going");
   const actionTaken = option.action;
   console.log(actionTaken);
+  return actionResult(actionTaken);
 }
 
 /* Main Battle Function */
@@ -20,6 +30,7 @@ function battle(sceneNumber) {
   console.log("battle on going");
   const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object at scenes.js
 
+  bubbleText.innerText = ""; //Clear previous texts
   /* --- Commands --- */
 
   while (commandsElem.firstChild) {
