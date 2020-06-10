@@ -55,7 +55,7 @@ function chooseOption(option) {
   if (nextSceneNumber === 0) {
     return game(); //Restart option
   } else if (nextSceneNumber === 77) {
-    return battle(); //Battle option
+    return battle(nextSceneNumber); //Battle option
   } else {
     showScene(nextSceneNumber); //Following scene
   }
