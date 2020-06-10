@@ -1017,19 +1017,23 @@ const scenes = [
     options: [
       {
         text: "Sword",
-        nextScene: 77
+        nextScene: 77,
+        action: "swordAttack"
       },
       {
         text: "Flintlock",
-        nextScene: 77
+        nextScene: 77,
+        action: "pistolAttack"
       },
       {
         text: "Parry",
-        nextScene: 77
+        nextScene: 77,
+        action: "swordDefend"
       },
       {
         text: "Evade",
-        nextScene: 77
+        nextScene: 77,
+        action: "pistolDefend"
       }
     ]
   },
