@@ -150,15 +150,26 @@ This site consists single page so let's focus on the different elements:
 
 * **Inside the Game**: a bit of explanation of what is in the actual game.
 
- - Base Dynamic: the premise of the game is choosing an option in a situation and progress to another.
+ *Base Dynamic*: the premise of the game is choosing an option in a situation and progress to another.
 
- - Deaths: there are nine different deaths to finish different story arcs. After each of them, the user gets prompted to "Restart" by including it as the only option in the interactive buttons.
+ *Deaths*: there are nine different deaths to finish different story arcs. After each of them, the user gets prompted to "Restart" by including it as the only option in the interactive buttons.
 
- - Wins: after finishing successfully the correct arc, the user gets to chose fours different endings. After the chosen ending is viewed, the player gets prompted to play again to see another ending by including "Play Again" as the only option in the interactive buttons.
+ *Wins*: after finishing successfully the correct arc, the user gets to chose fours different endings. After the chosen ending is viewed, the player gets prompted to play again to see another ending by including "Play Again" as the only option in the interactive buttons.
 
- - Battle mode: special mode with slightly different mechanics.
- 
+ *Battle mode*: special mode with slightly different mechanics. Player is trapped in this scene until success or defeat. Turn based battle to the best to five, which is the number of lives provided for both player and opponent.
+
 The whole site has response from small devices to larger screens, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
+
+### Future Features Objectives
+Ordering the possibilities in a list of viability, considering both complexity and relevance:
+
+1. Creating parallel partial story arcs, adding complexity to the global story arc of the game. (LOW complexity / MED relevance)
+
+2. Adding a trophy system to the bottom of the page, unlocking them when a player reaches a certain death, a certain number of deaths, a certain win, etc... (MED complexity / MED relevance)
+
+3. Save game feature allowing the player to save the current situation on the story and coming back another day or in another terminal. This is provided the points 1 and 2 are implemented. A login system. (HIG complexity / MED relevance)
+
+4. Provide proper sizing and response for 4k screens (MED complexity / LOW relevance)
 
 ## Contact
 
