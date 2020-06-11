@@ -27,6 +27,7 @@ function showScene(sceneNumber) {
 
   infoText.innerText = scene.text; //Screen text info type
   bubbleText.innerText = scene.dialog; //Screen text dialog type
+  battleText.innerText = ""; //Battle text not present
 
   /* --- Commands --- */
 
