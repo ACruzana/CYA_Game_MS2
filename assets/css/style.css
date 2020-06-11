@@ -85,6 +85,30 @@ footer {
   box-shadow: 0 0 10px 2px;
 }
 
+.bar-hp {
+  background: rgb(248, 248, 165);
+  background: rgba(248, 248, 165, 0.7);
+  background-image: url("../images/hp-bg.png");
+  background-position: left;
+  background-size: contain;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px;
+  height: 35px;
+}
+
+.opponent-hp {
+  display: none;
+  width: 179px;
+}
+
+.player-hp {
+  bottom: 138px;
+  display: none;
+  position: absolute;
+  right: 1px;
+  width: 151px;
+}
+
 /* Game Commands */
 
 .option-btn {
