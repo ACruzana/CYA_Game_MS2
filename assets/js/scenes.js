@@ -1012,7 +1012,7 @@ const scenes = [
   {
     id: 77, //Scene Seven-Seven - challenge mode
     text: "",
-    background: "",
+    background: "assets/images/scenes/77.png",
     dialog: "",
     options: [
       {

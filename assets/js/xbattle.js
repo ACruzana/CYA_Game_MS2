@@ -95,7 +95,7 @@ function actionResult(action, counter) { //Output of each battle action
     }
   }
 
-  return battleOver(playerHp, opponentHp);
+  return battleOver(playerHp, opponentHp); //Check continue
 }
 
 /* Battle Option Processing */
@@ -107,7 +107,7 @@ function battleOption(option) {
   let opponentRng = Math.floor(Math.random() * 4);
   let counterAction = opponentMoves[opponentRng];
 
-  return actionResult(actionTaken, counterAction);
+  return actionResult(actionTaken, counterAction); //Check result
 }
 
 /* Main Battle Function */
@@ -136,7 +136,9 @@ function battle(sceneNumber) {
 
   bubbleText.innerText = ""; //Clear previous texts
 
+  const bgSrc = "'" + scene.background + "'";
+  const bgUrl = "url(" + bgSrc + ")";
   $(screenElem).css({
-    "background": "red"
-  }); // toDo visually
+    "background-image": bgUrl
+  }); //Put new scene background
 }
