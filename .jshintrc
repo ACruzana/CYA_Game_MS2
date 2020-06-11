@@ -13,6 +13,7 @@
     "swordHitSound": false,
     "swordParrySound": false,
     "gunSound": false,
-    "bubbleText": false
+    "bubbleText": false,
+    "showScene": false
   }
 }
