@@ -6,6 +6,10 @@
   "globals": {
     "scenes": false,
     "buttonSound": false,
-    "battle": false
+    "battle": false,
+    "commandsElem": false,
+    "screenElem": false,
+    "commandsElem": false,
+    "bubbleText": false
   }
 }

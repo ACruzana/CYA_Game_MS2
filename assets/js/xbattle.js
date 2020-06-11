@@ -7,12 +7,52 @@ const battleText = document.getElementById("battleText"); //Text imputs
 
 /* Battle Option Execution */
 
-function actionResult(action) { //How boss reacts toDo
-  if (action === "swordAttack") {
-      console.log("you attacked with the sword")
-      } else {
-        console.log("you did not attack with the sword")
-      }
+function actionResult(action) { //Output of each battle action
+  const opponentMoves = ["swordAttack", "pistolAttack", "swordDefend", "pistolDefend"]; //Opponent random move
+  let opponentRng = Math.floor(Math.random() * 4);
+  let counterAction = opponentMoves[opponentRng];
+
+  if (action === "swordAttack") { //Sword Att vs Opp
+    if (counterAction === "swordAttack") {
+      console.log("you attacked with the sword and boss also used the sword");
+    } else if (counterAction === "pistolAttack") {
+      console.log("you attacked with the sword and boss used the pistol");
+    } else if (counterAction === "swordDefend") {
+      console.log("you attacked with the sword but boss parried");
+    } else {
+      console.log("you attacked with the sword, boss tried to evade but failed");
+    }
+  } else if (action === "pistolAttack") { //Pistol Att vs Opp
+    if (counterAction === "swordAttack") {
+      console.log("you shot your flintlock but boss used the sword");
+    } else if (counterAction === "pistolAttack") {
+      console.log("you shot your flintlock and boss also used the pistol");
+    } else if (counterAction === "swordDefend") {
+      console.log("you shot your flintlock, boss tried to parry but failed");
+    } else {
+      console.log("you shot your flintlock boss evaded");
+    }
+  } else if (action === "swordDefend") { //Sword Def vs Opp
+    if (counterAction === "swordAttack") {
+      console.log("you parried the boss attack with the sword");
+    } else if (counterAction === "pistolAttack") {
+      console.log("you tried parrying but boss also used the pistol");
+    } else if (counterAction === "swordDefend") {
+      console.log("you both look like fools parrying for nothing");
+    } else {
+      console.log("your are parrying and boss is evading");
+    }
+  } else {
+    if (counterAction === "swordAttack") { //Pistol Def vs Opp
+      console.log("you tried evading but the boss attacked with the sword");
+    } else if (counterAction === "pistolAttack") {
+      console.log("you evaded that shot, boss used the pistol");
+    } else if (counterAction === "swordDefend") {
+      console.log("you are evading, boss is parrying");
+    } else {
+      console.log("your are both strafing like mad men");
+    }
+  }
 }
 
 /* Battle Option Execution */
@@ -46,7 +86,7 @@ function battle(sceneNumber) {
     });
     commandsElem.appendChild(btn);
   }); //Create new option buttons
-      
+
   /* --- Screen --- */
 
   $(screenElem).css({
@@ -54,7 +94,7 @@ function battle(sceneNumber) {
   }); // toDo visually
 
   battleText.innerText = scene.text; //Screen text info type toDo
-  
+
   /* win showScene(78);*/ //future returns
   /* lose showScene(79);*/
 }
