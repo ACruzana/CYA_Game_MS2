@@ -4,6 +4,8 @@ const swordHitSound = document.getElementById("sword-hit-sound"); //Sound Effect
 const swordParrySound = document.getElementById("sword-parry-sound");
 const gunSound = document.getElementById("gun-sound");
 const battleText = document.getElementById("battleText"); //Text imputs at battle
+let opponentLives = document.getElementById("opponent-hp");
+let playerLives = document.getElementById("player-hp");
 let playerHp = 5;
 let opponentHp = 6;
 
@@ -13,13 +15,78 @@ function battleOver(player, opponent) { //Decide if we go back to the story arc 
   if (player === 0) {
     playerHp = 5;
     opponentHp = 6;
+    $(opponentLives).css({
+      "display": "none"
+    });
+    $(playerLives).css({
+      "display": "none"
+    });
     return showScene(79); //Battle Lost scene and reset Hp for restart
   } else if (opponent === 0) {
     playerHp = 5;
     opponentHp = 6;
+    $(opponentLives).css({
+      "display": "none"
+    });
+    $(playerLives).css({
+      "display": "none"
+    });
     return showScene(78); //Battle Won scene and reset Hp for restart
   }
   return;
+}
+
+/* HP bars management */
+
+function hpBarManagement(player, opponent) {
+
+  if (opponent === 6) {
+    $(opponentLives).css({
+      "width": "180"
+    });
+  } else if (opponent === 5) {
+    $(opponentLives).css({
+      "width": "150"
+    });
+  } else if (opponent === 4) {
+    $(opponentLives).css({
+      "width": "120"
+    });
+  } else if (opponent === 3) {
+    $(opponentLives).css({
+      "width": "90"
+    });
+  } else if (opponent === 2) {
+    $(opponentLives).css({
+      "width": "60"
+    });
+  } else if (opponent === 1) {
+    $(opponentLives).css({
+      "width": "30"
+    });
+  }
+
+  if (player === 5) {
+    $(playerLives).css({
+      "width": "150"
+    });
+  } else if (player === 4) {
+    $(playerLives).css({
+      "width": "120"
+    });
+  } else if (player === 3) {
+    $(playerLives).css({
+      "width": "90"
+    });
+  } else if (player === 2) {
+    $(playerLives).css({
+      "width": "60"
+    });
+  } else if (player === 1) {
+    $(playerLives).css({
+      "width": "30"
+    });
+  }
 }
 
 /* Battle Option Execution */
@@ -94,6 +161,7 @@ function actionResult(action, counter) { //Output of each battle action
       battleText.innerText = "You are both strafing to the side in circles... Funny, but this could never end...";
     }
   }
+  hpBarManagement(playerHp, opponentHp);
 
   return battleOver(playerHp, opponentHp); //Check continue
 }
@@ -141,4 +209,11 @@ function battle(sceneNumber) {
   $(screenElem).css({
     "background-image": bgUrl
   }); //Put new scene background
+
+  $(opponentLives).css({
+    "display": "block"
+  });
+  $(playerLives).css({
+    "display": "block"
+  });
 }
