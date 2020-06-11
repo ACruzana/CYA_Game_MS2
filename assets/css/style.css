@@ -94,19 +94,21 @@ footer {
   border-radius: 3px;
   box-shadow: 0 0 10px 2px;
   height: 35px;
+  width: 151px;
 }
 
 .opponent-hp {
   display: none;
-  width: 179px;
+  left: 3px;
+  position: absolute;
+  top: 5px;
 }
 
 .player-hp {
   bottom: 138px;
   display: none;
   position: absolute;
-  right: 1px;
-  width: 151px;
+  right: 3px;
 }
 
 /* Game Commands */
