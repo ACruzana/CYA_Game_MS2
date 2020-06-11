@@ -11,9 +11,13 @@ let opponentHp = 6;
 
 function battleOver(player, opponent) { //Decide if we go back to the story arc or not
   if (player === 0) {
-    return showScene(79);
+    playerHp = 5;
+    opponentHp = 6;
+    return showScene(79); //Battle Lost scene and reset Hp for restart
   } else if (opponent === 0) {
-    return showScene(78);
+    playerHp = 5;
+    opponentHp = 6;
+    return showScene(78); //Battle Won scene and reset Hp for restart
   }
   return;
 }
@@ -135,7 +139,4 @@ function battle(sceneNumber) {
   $(screenElem).css({
     "background": "red"
   }); // toDo visually
-
-  /* win showScene(78);*/ //future returns
-  /* lose showScene(79);*/
 }
