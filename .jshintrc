@@ -10,6 +10,9 @@
     "commandsElem": false,
     "screenElem": false,
     "commandsElem": false,
+    "swordHitSound": false,
+    "swordParrySound": false,
+    "gunSound": false,
     "bubbleText": false
   }
 }
