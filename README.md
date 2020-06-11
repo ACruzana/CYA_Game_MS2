@@ -158,7 +158,6 @@ This site consists single page so let's focus on the different elements:
 
  *Battle mode*: special mode with slightly different mechanics. Player is trapped in this scene until success or defeat. Turn based battle to the best to five, which is the number of lives provided for both player and opponent.
 
------
 The whole site has response from small devices to larger screens, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
 
 ### Future Features Objectives
@@ -202,7 +201,6 @@ All the ideas, materials displayed and all the site designs belong to Ángel Gon
 ### Music
 [*The Buccaneers Haul by Shane Ivers*](https://www.silvermansound.com)
 
-----
 **Disclaimer:** This site and its contents or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher except for the use of brief quotations as credits and/or recommendation. Copyright © 2020.
 
 ### Acknowledgements
@@ -215,7 +213,7 @@ Special mention to this page for providing pirate themed slang:
 
 * [Pirate Voyages](https://www.piratevoyages.com/pirate-lingo/)
 
-Also a shout out to my mentor on this project [Maranatha A. Ilesanmi](") for providing guidance when needed.
+Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](") for providing guidance when needed.
 
 ## Contact
 
