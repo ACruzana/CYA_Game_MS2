@@ -176,13 +176,19 @@ During the development, using Brackets by Adobe and its built-in live preview ma
 
 After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" checking for possible warnings or errors.
 
-**Global Display:** tbd.
+>Note: as no modules (import/export) are being used for this project but diverse .js files are implied, a file called *.jshintrc* was created to reduce some errors called by the JShint built in on Brackets.io. Even with this fix, some redeclaration warnings are shown yet.
 
-**Game Screen:** tbd.
+**Global Display:** tests were made on browsers, tablets and phones ensuring that responsiveness of the WebApp on every screen size.
 
-**Game Commands:** tbd.
+**Game Screen:** display of every single scene of the different story arcs needed to be tested so I counted with the help of some Beta-testers.
+>Note: history of the errors can be seen on [*Tests File*]("/assets/tests/test.xlxs")
 
-**Options:** tbd. 
+**Game Commands:** the same way as the screen, load of the proper button text and interaction had to be tested, so once more I counted with the help of some Beta-testers.
+>Note: history of the errors can be seen on [*Tests File*]("/assets/tests/test.xlxs")
+
+**Options:** music and sound effects were tested on different devices as well. The same with the different available backgrounds.
+
+**Links:** a single external link is present. It was tested after deployment at GitHub Pages.
 
 ## Deployment
 This site is temporarily hosted on GitHub Pages, from Master branch.
