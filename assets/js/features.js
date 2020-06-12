@@ -8,6 +8,8 @@ function soundOn() {
   gunSound.muted = false;
   swordParrySound.muted = false;
   buttonSound.muted = false;
+  winSound.muted = false;
+  loseSound.muted = false;
   $("#soundOn").addClass("underlined");
   $("#soundOff").removeClass("underlined");
 }
@@ -17,6 +19,8 @@ function soundOff() {
   gunSound.muted = true;
   swordParrySound.muted = true;
   buttonSound.muted = true;
+  winSound.muted = true;
+  loseSound.muted = true;
   $("#soundOff").addClass("underlined");
   $("#soundOn").removeClass("underlined");
 }

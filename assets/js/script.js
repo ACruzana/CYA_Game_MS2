@@ -1,10 +1,11 @@
-
 /* Variables Set (screen/commands) */
 
 const screenElem = document.getElementById("screen");
 const commandsElem = document.getElementById("commands");
 const infoText = document.getElementById("infoText");
 const bubbleText = document.getElementById("bubbleText");
+const winSound = document.getElementById("winSound");
+const loseSound = document.getElementById("loseSound");
 
 /* Main function */
 
@@ -16,7 +17,15 @@ function game() {
 
 function showScene(sceneNumber) {
   const scene = scenes.find(scene => scene.id === sceneNumber); //Access the object at scenes.js
-  
+
+  /* --- Audio --- */
+
+  if (sceneNumber === 4) {
+    winSound.play();
+  } else if (sceneNumber === 99) {
+    loseSound.play();
+  }
+
   /* --- Screen --- */
 
   const bgSrc = "'" + scene.background + "'";
