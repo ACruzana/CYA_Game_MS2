@@ -9,6 +9,36 @@ Pirate Game
 
 This is a "choose your own adventure" type of game. The game is both available to be played in browser of portable device. The site itself includes some optional access features like light/dark mode, sound effects and ambient music to personalise user experience.
 
+---
+
+## **TABLE OF CONTENTS**
+
+1. [UX](#UX)
+ * [User Stories](#User-stories)
+ * [Strategy](#Strategy)
+ * [Wireframes](#Wireframes)
+ * [Scope](#Scope)
+ * [Structure](#Structure)
+ * [Theming](#Theming)
+2. [Features](#Features)
+ * [Future Features](#Future-Features)
+
+3. [Testing](#Testing)
+4. [Deployment](#Deployment)
+
+ * [Github Pages](#Github-Pages)
+ * [Cloning Repository](#Cloning-Repository)
+
+5. [Credits](#Credits)
+
+ * [Images](#Images)
+ * [Music](#Music)
+ * [Acknowledgements](#Acknowledgements)
+
+6. [Contact](#Contact)
+
+---
+
 ## UX
 ### User stories
 Users of this WebApp will be people wanting to spend a good while playing through the game story and trying to beat it.
@@ -53,7 +83,7 @@ Final concept wireframes:
 
 * Scene Types: 
 
-See [Features](#Features)
+>>See [Features](#Features)
 
 Another very important part of the planning process was the structure of the story, this was in order to make easier establish code logic. Here are the decision trees of the game (last two are not included to avoid spoilers):
 
@@ -110,6 +140,8 @@ Color palette sticks to tones that are commonly associated with the pirate world
 
 Finally, the music used for ambience is [The Buccaneers Haul by Shane Ivers](https://www.silvermansound.com), meanwhile the button effect was found at [Sound Snap](https://www.soundsnap.com/).
 
+---
+
 ## Features
 This site consists single page so let's focus on the different elements:
 
@@ -165,6 +197,8 @@ Ordering the possibilities in a list of viability, considering both complexity a
 
 4. Provide proper sizing and response for 4k screens (MED complexity / LOW relevance)
 
+---
+
 ## Testing
 During the development, using Brackets by Adobe and its built-in live preview made it very easy to adjust response and test the majority as was coded, via Developer Tools.
 
@@ -184,12 +218,16 @@ After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" che
 
 **Links:** a single external link is present. It was tested after deployment at GitHub Pages.
 
+---
+
 ## Deployment
 This site is temporarily hosted on GitHub Pages, from Master branch.
 
 Deployment on Pages was made only before submitting the project for final testing. The project was kept on Brackets "live preview" for modifications, even though it was committed to GitHub and updated via GitBash on a frequent basis.
 
 To run it on your local computer offline, the repository must be cloned beforehand.
+
+---
 
 ## Credits
 
@@ -213,7 +251,9 @@ Special mention to this page for providing pirate themed slang:
 
 * [Pirate Voyages](https://www.piratevoyages.com/pirate-lingo/)
 
-Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](https://github.com/mbilesanmi) for providing guidance when needed.
+Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](https://github.com/mbilesanmi){target="_blank"} for providing guidance when needed.
+
+---
 
 ## Contact
 
