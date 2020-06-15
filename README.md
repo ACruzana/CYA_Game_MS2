@@ -10,7 +10,7 @@ This is a "choose your own adventure" type of game. The game is both available t
 
 ---
 
-## **TABLE OF CONTENTS**
+## **Table of Contents**
 
 1. [UX](#UX)
     * [User Stories](#User-Stories)
@@ -110,7 +110,7 @@ Also, was important to have all the interaction focus on the game screen to be a
 ### Structure
 In the browser, all three main elements are occupying one third width of the screen:
 
-![Full-page-browser](/assets/images/screencaptures/Full-page-browser.png "Browser View")
+    ![Full-page-browser](/assets/images/screencaptures/Full-page-browser.png "Browser View")
 
 The **title** section, displays to the left and centered.
 
@@ -120,7 +120,7 @@ The **features** section, displays to the right with the instructions tab opened
 
 On a mobile device, all three main elements are aligned one on top of the other:
 
-![Full-page-phone](/assets/images/screencaptures/Full-page-phone.png "Phone View")
+    ![Full-page-phone](/assets/images/screencaptures/Full-page-phone.png "Phone View")
 
 The **title** section, displays on the top with reduced size.
 
@@ -152,7 +152,7 @@ This site consists single page so let's focus on the different elements:
 
 * **Game Screen**: display position adapts depending on screen size, keeping always the main focus spot. Here is the preview of how some of the different [types of scenes](#Wireframes) result, with changeable text on the interactive buttons and images on the background. As well as the text included in each different scene.
 
-![Scene-type-description](/assets/images/screencaptures/Scene-type-description.png "Scene type description") ![Scene-type-speech](/assets/images/screencaptures/Scene-type-speech.png "Scene type speech")
+    ![Scene-type-description](/assets/images/screencaptures/Scene-type-description.png "Scene type description") ![Scene-type-speech](/assets/images/screencaptures/Scene-type-speech.png "Scene type speech")
 
     *Image*: background changes on every visited scene making the story interesting and engaging, and the interaction meaningful.
 
@@ -162,8 +162,7 @@ This site consists single page so let's focus on the different elements:
 
 * **Miscelanea section**: placed to the right of the game screen, this card-panel system displays the game instructions by default to help the browser user understand the dynamic of the game. Once clicked the "Options" card-panel displays and "Instructions" hides. On this panel the user finds sound and music management, as well as having the option to change the theme to a darker one. The active option is marked by an underline.
 
-![Features-default](/assets/images/screencaptures/Features-default.png "Features default")
-![Features-options](/assets/images/screencaptures/Features-options.png "Features options")
+    ![Features-default](/assets/images/screencaptures/Features-default.png "Features default") ![Features-options](/assets/images/screencaptures/Features-options.png "Features options")
 
     *Sound Effect*: "ON" by default, allows to mute the sound effect when changing scene.
 
