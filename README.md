@@ -1,5 +1,7 @@
 # CYA_Game_MS2
 
+---
+
 Choose your adventure game (Milestone PJ 2 -CI FSC)
 
 # Choose Your Adventure - The Long Lost Treasure
@@ -14,33 +16,33 @@ This is a "choose your own adventure" type of game. The game is both available t
 ## **TABLE OF CONTENTS**
 
 1. [UX](#UX)
- * [User Stories](#User-stories)
- * [Strategy](#Strategy)
- * [Wireframes](#Wireframes)
- * [Scope](#Scope)
- * [Structure](#Structure)
- * [Theming](#Theming)
+    * [User Stories](#User-Stories)
+    * [Strategy](#Strategy)
+    * [Wireframes](#Wireframes)
+    * [Scope](#Scope)
+    * [Structure](#Structure)
+    * [Theming](#Theming)
 2. [Features](#Features)
- * [Future Features](#Future-Features)
+    * [Future Features](#Future-Features-Objectives)
 
 3. [Testing](#Testing)
 4. [Deployment](#Deployment)
 
- * [Github Pages](#Github-Pages)
- * [Cloning Repository](#Cloning-Repository)
+    * [Github Pages](#Configuration-of-GitHub-Pages)
+    * [Cloning Repository](#Cloning-Repository)
 
 5. [Credits](#Credits)
 
- * [Images](#Images)
- * [Music](#Music)
- * [Acknowledgements](#Acknowledgements)
+    * [Images](#Images)
+    * [Music](#Music)
+    * [Acknowledgements](#Acknowledgements)
 
 6. [Contact](#Contact)
 
 ---
 
 ## UX
-### User stories
+### User Stories
 Users of this WebApp will be people wanting to spend a good while playing through the game story and trying to beat it.
 
 The site [(see full-size preview)](/assets/images/screencaptures/Full-page-browser.png) is based on a single interactive page. The sections are distributed symmetrically to make it intuitive to visually navigate through content in a fast and easy way.
@@ -221,11 +223,25 @@ After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" che
 ---
 
 ## Deployment
-This site is temporarily hosted on GitHub Pages, from Master branch.
+This site is temporarily hosted on GitHub Pages, from Master branch. 
 
 Deployment on Pages was made only before submitting the project for final testing. The project was kept on Brackets "live preview" for modifications, even though it was committed to GitHub and updated via GitBash on a frequent basis.
 
+#### Configuration of GitHub Pages
+1. Enter the repository *Settings*.
+2. Scroll down to the *GitHub Pages* section.
+3. Locate *Source* dropdown menu and select *'Master Branch'*.
+4. After scarce time, the link is available and working. [*Access here*](https://cruzzfire.github.io/CYA_Game_MS2/).
+
+#### Cloning the Repository
+
 To run it on your local computer offline, the repository must be cloned beforehand.
+
+1. Once on the repository locate the *Clone or Download* dropdown menu.
+2. Copy either the HTTPS or SSH route to your clipboard.
+3. Open *GitBash* and move to the folder where you want to place the cloned repository files.
+4. Type **"git clone"**, **tap spacebar once** and then paste the route copied in your clipboar at *step 2*.
+5. Press Enter to exec the command and the local cloned files will be created.
 
 ---
 
@@ -251,7 +267,7 @@ Special mention to this page for providing pirate themed slang:
 
 * [Pirate Voyages](https://www.piratevoyages.com/pirate-lingo/)
 
-Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](https://github.com/mbilesanmi){target="_blank"} for providing guidance when needed.
+Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](https://github.com/mbilesanmi) for providing guidance when needed.
 
 ---
 
