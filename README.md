@@ -33,13 +33,9 @@ The most ambitious goal is having a player playing again after winning the game,
 ### Wireframes
 Here are the first concept wireframes:
 
-* Browser View: 
+* [Browser-View](/assets/wireframes/Browser-idea.png "Browser View")
 
-![Browser-View](/assets/wireframes/Browser-idea.png "Browser View")
-
-* Device View: 
-
-![Device-View](/assets/wireframes/Phone-idea.png "Device View")
+* [Device-View](/assets/wireframes/Phone-idea.png "Device View")
 
 * Scene Types: 
 
@@ -53,9 +49,7 @@ Final concept wireframes:
 
 ![Browser-View](/assets/wireframes/Browser-idea-defined.png "Browser View")
 
-* Device View: 
-
-![Device-View](/assets/wireframes/Phone-idea-defined.png "Device View")
+* [Device-View](/assets/wireframes/Phone-idea-defined.png "Device View")
 
 * Scene Types: 
 
@@ -181,7 +175,7 @@ After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" che
 **Global Display:** tests were made on browsers, tablets and phones ensuring that responsiveness of the WebApp on every screen size.
 
 **Game Screen:** display of every single scene of the different story arcs needed to be tested so I counted with the help of some Beta-testers.
->Note: history of the errors can be seen on [*Phase 1*]("/assets/tests/Phase1.png"), [*Phase 2*]("/assets/tests/Phase2.png"), [*Phase 3*]("/assets/tests/Phase3.png").
+>Note: history of the errors can be seen on [*Phase 1*](/assets/tests/Phase1.png), [*Phase 2*](/assets/tests/Phase2.png), [*Phase 3*](/assets/tests/Phase3.png).
 
 **Game Commands:** the same way as the screen, load of the proper button text and interaction had to be tested, so once more I counted with the help of some Beta-testers.
 >Note: history of the errors can be seen on also downloading the spreadsheet in the "./assets/tests" path of the master branch.
@@ -219,10 +213,8 @@ Special mention to this page for providing pirate themed slang:
 
 * [Pirate Voyages](https://www.piratevoyages.com/pirate-lingo/)
 
-Also a shoutout to my mentor on this project Maranatha A. Ilesanmi for providing guidance when needed.
+Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](https://github.com/mbilesanmi) for providing guidance when needed.
 
 ## Contact
 
 **E-mail:** a.cruzana88@gmail.com :technologist:
-
-**Slack-id:** U012EE0G6CR :speech_balloon:
