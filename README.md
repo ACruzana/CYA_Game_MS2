@@ -1,7 +1,4 @@
 # CYA_Game_MS2
-
----
-
 Choose your adventure game (Milestone PJ 2 -CI FSC)
 
 # Choose Your Adventure - The Long Lost Treasure
@@ -29,7 +26,7 @@ This is a "choose your own adventure" type of game. The game is both available t
 4. [Deployment](#Deployment)
 
     * [Github Pages](#Configuration-of-GitHub-Pages)
-    * [Cloning Repository](#Cloning-Repository)
+    * [Cloning Repository](#Cloning-the-Repository)
 
 5. [Credits](#Credits)
 
@@ -79,31 +76,31 @@ Final concept wireframes:
 
 * Browser View: 
 
-![Browser-View](/assets/wireframes/Browser-idea-defined.png "Browser View")
+    ![Browser-View](/assets/wireframes/Browser-idea-defined.png "Browser View")
 
 * [Device-View](/assets/wireframes/Phone-idea-defined.png "Device View")
 
 * Scene Types: 
 
->>See [Features](#Features)
+    See [Features](#Features)
 
 Another very important part of the planning process was the structure of the story, this was in order to make easier establish code logic. Here are the decision trees of the game (last two are not included to avoid spoilers):
 
 * Start decision tree: 
 
-![Start-Tree](/assets/wireframes/Tree-decision-start.png "Start Tree")
+    ![Start-Tree](/assets/wireframes/Tree-decision-start.png "Start Tree")
 
 * Hide decision tree: 
 
-![Hide-Tree](/assets/wireframes/Tree-decision-hide.png "Hide Tree")
+    ![Hide-Tree](/assets/wireframes/Tree-decision-hide.png "Hide Tree")
 
 * Enlist decision tree: 
 
-![Enlist-Tree](/assets/wireframes/Tree-decision-enlist.png "Enlist Tree")
+    ![Enlist-Tree](/assets/wireframes/Tree-decision-enlist.png "Enlist Tree")
 
 * Rob decision tree: 
 
-![Rob-Tree](/assets/wireframes/Tree-decision-rob.png "Rob Tree")
+    ![Rob-Tree](/assets/wireframes/Tree-decision-rob.png "Rob Tree")
 
 ### Scope
 Considering the goals set at [Strategy](#Strategy), has been necessary to make a solid pirate theme [(see Theming)](#Theming) to make the experience coherent. As well as giving some options to customize and make the user spend more time in the WebApp.
@@ -149,7 +146,7 @@ This site consists single page so let's focus on the different elements:
 
 * **Site Icon**: personalized WebApp icon displays on the browser. Also in the case someone bookmarks the game page.
 
-![site-icon](/assets/images/site-icon.png "Site icon")
+    ![site-icon](/assets/images/site-icon.png "Site icon")
 
 * Game **Title**: strongly styled as the [theming](#Theming) section explained. Display position adapts depending on screen size.
 
@@ -157,34 +154,34 @@ This site consists single page so let's focus on the different elements:
 
 ![Scene-type-description](/assets/images/screencaptures/Scene-type-description.png "Scene type description") ![Scene-type-speech](/assets/images/screencaptures/Scene-type-speech.png "Scene type speech")
 
-*Image*: background changes on every visited scene making the story interesting and engaging, and the interaction meaningful.
+    *Image*: background changes on every visited scene making the story interesting and engaging, and the interaction meaningful.
 
-*Text*: changes along the image displayed are either a dialog or a description of the action. Both either prompting the player to take a decision or inform of the new circumstances.
+    *Text*: changes along the image displayed are either a dialog or a description of the action. Both either prompting the player to take a decision or inform of the new circumstances.
 
-*Buttons*: the four buttons display the different options to take and they change according to the scene. Not being available all of them sometimes makes the user read and stop a second to engage deeper in the experience.
+    *Buttons*: the four buttons display the different options to take and they change according to the scene. Not being available all of them sometimes makes the user read and stop a second to engage deeper in the experience.
 
 * **Miscelanea section**: placed to the right of the game screen, this card-panel system displays the game instructions by default to help the browser user understand the dynamic of the game. Once clicked the "Options" card-panel displays and "Instructions" hides. On this panel the user finds sound and music management, as well as having the option to change the theme to a darker one. The active option is marked by an underline.
 
 ![Features-default](/assets/images/screencaptures/Features-default.png "Features default")
 ![Features-options](/assets/images/screencaptures/Features-options.png "Features options")
 
-*Sound Effect*: "ON" by default, allows to mute the sound effect when changing scene.
+    *Sound Effect*: "ON" by default, allows to mute the sound effect when changing scene.
 
-*Ambient Music*: "OFF" by default, allows to play pirate themed music as background meanwhile the user is on the site.
+    *Ambient Music*: "OFF" by default, allows to play pirate themed music as background meanwhile the user is on the site.
 
-*Light Mode*: "ON" by default, allows to change the site background to a darker version to reduce the light coming from the screen.
+    *Light Mode*: "ON" by default, allows to change the site background to a darker version to reduce the light coming from the screen.
 
 * **Hover Effects**: there is a slight shading in the game screen buttons on browser in case the user scroll over them meanwhile decides. There is also a hover effect over the "Miscelanea section" titles and "Options" text changing colour. This effect along the mouse transforming to pointer makes it clearer to the user that some action is available, apart from the aesthetic, of course. 
 
 * **Inside the Game**: a bit of explanation of what is in the actual game.
 
- *Base Dynamic*: the premise of the game is choosing an option in a situation and progress to another.
+    *Base Dynamic*: the premise of the game is choosing an option in a situation and progress to another.
 
- *Deaths*: there are nine different deaths to finish different story arcs. After each of them, the user gets prompted to "Restart" by including it as the only option in the interactive buttons.
+    *Deaths*: there are nine different deaths to finish different story arcs. After each of them, the user gets prompted to "Restart" by including it as the only option in the interactive buttons.
 
- *Wins*: after finishing successfully the correct arc, the user gets to chose fours different endings. After the chosen ending is viewed, the player gets prompted to play again to see another ending by including "Play Again" as the only option in the interactive buttons.
+    *Wins*: after finishing successfully the correct arc, the user gets to chose fours different endings. After the chosen ending is viewed, the player gets prompted to play again to see another ending by including "Play Again" as the only option in the interactive buttons.
 
- *Battle mode*: special mode with slightly different mechanics. Player is trapped in this scene until success or defeat. Turn based battle to the best to five, which is the number of lives provided for both player and opponent.
+    *Battle mode*: special mode with slightly different mechanics. Player is trapped in this scene until success or defeat. Turn based battle to the best to five, which is the number of lives provided for both player and opponent.
 
 The whole site has response from small devices to larger screens, moving sections from sideways to top/bottom when needed to achieve best display. Not responsive on 4k at the moment.
 
@@ -208,8 +205,15 @@ After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" che
 
 >Note: as no modules (import/export) are being used for this project but diverse .js files are implied, a file called *.jshintrc* was created to reduce some errors called by the JShint built in on Brackets.io. Even with this fix, some redeclaration warnings are shown yet.
 
-**Global Display:** tests were made on browsers, tablets and phones ensuring that responsiveness of the WebApp on every screen size.
+**Global Display:** tests were made on browsers (Chrome, Edge, Firefox), tablets and phones ensuring that responsiveness of the WebApp on every screen size. Some examples of portable devices used by me or testers involved were:
 
+ * Huawei Mate 9 Lite, Huawei GR5 2017
+ * Apple iPhone 11
+ * Apple iPhone 8
+ * Samsung Galaxy A50
+ * BQ Aquaris M10 Ubuntu Edition
+ * Microsoft Surface 2
+ 
 **Game Screen:** display of every single scene of the different story arcs needed to be tested so I counted with the help of some Beta-testers.
 >Note: history of the errors can be seen on [*Phase 1*](/assets/tests/Phase1.png), [*Phase 2*](/assets/tests/Phase2.png), [*Phase 3*](/assets/tests/Phase3.png).
 
@@ -260,8 +264,8 @@ All the ideas, materials displayed and all the site designs belong to Ángel Gon
 ### Acknowledgements
 Great help once more from the documentation of these two sites, you can really learn as you go and adapt their examples to your own code:
 
-* [w3schools](https://www.w3schools.com/)
-* [MDN](https://developer.mozilla.org/en-US/)
+    * [w3schools](https://www.w3schools.com/)
+    * [MDN](https://developer.mozilla.org/en-US/)
 
 Special mention to this page for providing pirate themed slang:
 
