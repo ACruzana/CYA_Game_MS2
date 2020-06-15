@@ -181,10 +181,10 @@ After finishing the coding, used "HTML validators", "CSS lint" and "JS hint" che
 **Global Display:** tests were made on browsers, tablets and phones ensuring that responsiveness of the WebApp on every screen size.
 
 **Game Screen:** display of every single scene of the different story arcs needed to be tested so I counted with the help of some Beta-testers.
->Note: history of the errors can be seen on [*Tests File*]("/assets/tests/test.xlxs")
+>Note: history of the errors can be seen on [*Phase 1*]("/assets/tests/Phase1.png"), [*Phase 2*]("/assets/tests/Phase2.png"), [*Phase 3*]("/assets/tests/Phase3.png").
 
 **Game Commands:** the same way as the screen, load of the proper button text and interaction had to be tested, so once more I counted with the help of some Beta-testers.
->Note: history of the errors can be seen on [*Tests File*]("/assets/tests/test.xlxs")
+>Note: history of the errors can be seen on also downloading the spreadsheet in the "./assets/tests" path of the master branch.
 
 **Options:** music and sound effects were tested on different devices as well. The same with the different available backgrounds.
 
@@ -219,7 +219,7 @@ Special mention to this page for providing pirate themed slang:
 
 * [Pirate Voyages](https://www.piratevoyages.com/pirate-lingo/)
 
-Also a shoutout to my mentor on this project [Maranatha A. Ilesanmi](") for providing guidance when needed.
+Also a shoutout to my mentor on this project Maranatha A. Ilesanmi for providing guidance when needed.
 
 ## Contact
 
