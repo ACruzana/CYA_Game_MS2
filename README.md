@@ -110,7 +110,7 @@ Also, was important to have all the interaction focus on the game screen to be a
 ### Structure
 In the browser, all three main elements are occupying one third width of the screen:
 
-    ![Full-page-browser](/assets/images/screencaptures/Full-page-browser.png "Browser View")
+  ![Full-page-browser](/assets/images/screencaptures/Full-page-browser.png "Browser View")
 
 The **title** section, displays to the left and centered.
 
@@ -120,7 +120,7 @@ The **features** section, displays to the right with the instructions tab opened
 
 On a mobile device, all three main elements are aligned one on top of the other:
 
-    ![Full-page-phone](/assets/images/screencaptures/Full-page-phone.png "Phone View")
+  ![Full-page-phone](/assets/images/screencaptures/Full-page-phone.png "Phone View")
 
 The **title** section, displays on the top with reduced size.
 
